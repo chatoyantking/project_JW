@@ -1,0 +1,1210 @@
+
+*** Running vivado
+    with args -log HDMI_Demo.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source HDMI_Demo.tcl
+
+
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source HDMI_Demo.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'd:/HDMI_Demo/IP_Core/HDMI-IP/IP/RGB2DVI_IP'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/SEA-master/Examples/FPGA-IP/Mini-HDMI-IP'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/SEA-master/Examples/FPGA-IP/Image-Process-IP'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/IP_Core'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/vivado2018.3/Vivado/2018.3/data/ip'.
+CRITICAL WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:ip:rgb2dvi:1.2'. The one found in IP location 'd:/SEA-master/Examples/FPGA-IP/Mini-HDMI-IP/IP/RGB2DVI_IP' will take precedence over the same IP in location d:/IP_Core/RGB2DVI_IP
+Command: synth_design -top HDMI_Demo -part xc7s15ftgb196-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7s15'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7s15'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 5620 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 474.172 ; gain = 105.160
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'HDMI_Demo' [D:/HDMI_Demo/HDMI_Demo.srcs/sources_1/new/HDMI_Demo.v:23]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [D:/HDMI_Demo/HDMI_Demo.runs/synth_1/.Xil/Vivado-3376-hollander/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (1#1) [D:/HDMI_Demo/HDMI_Demo.runs/synth_1/.Xil/Vivado-3376-hollander/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'rgb2dvi_0' [D:/HDMI_Demo/HDMI_Demo.runs/synth_1/.Xil/Vivado-3376-hollander/realtime/rgb2dvi_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'rgb2dvi_0' (2#1) [D:/HDMI_Demo/HDMI_Demo.runs/synth_1/.Xil/Vivado-3376-hollander/realtime/rgb2dvi_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'Driver_HDMI' [D:/HDMI_Demo/HDMI_Demo.srcs/sources_1/new/Driver_HDMI.v:24]
+	Parameter H_ACTIVE_1280_720 bound to: 16'b0000010100000000 
+	Parameter H_FP_1280_720 bound to: 16'b0000000001101110 
+	Parameter H_SYNC_1280_720 bound to: 16'b0000000000101000 
+	Parameter H_BP_1280_720 bound to: 16'b0000000011011100 
+	Parameter V_ACTIVE_1280_720 bound to: 16'b0000001011010000 
+	Parameter V_FP_1280_720 bound to: 16'b0000000000000101 
+	Parameter V_SYNC_1280_720 bound to: 16'b0000000000000101 
+	Parameter V_BP_1280_720 bound to: 16'b0000000000010100 
+	Parameter H_TOTAL_1280_720 bound to: 16'b0000011001110010 
+	Parameter V_TOTAL_1280_720 bound to: 16'b0000001011101110 
+	Parameter H_ACTIVE_1920_1080 bound to: 16'b0000001100100000 
+	Parameter H_FP_1920_1080 bound to: 16'b0000000000101000 
+	Parameter H_SYNC_1920_1080 bound to: 16'b0000000010000000 
+	Parameter H_BP_1920_1080 bound to: 16'b0000000001011000 
+	Parameter V_ACTIVE_1920_1080 bound to: 16'b0000001001011000 
+	Parameter V_FP_1920_1080 bound to: 16'b0000000000000001 
+	Parameter V_SYNC_1920_1080 bound to: 16'b0000000000000100 
+	Parameter V_BP_1920_1080 bound to: 16'b0000000000010111 
+	Parameter H_TOTAL_1920_1080 bound to: 16'b0000010000100000 
+	Parameter V_TOTAL_1920_1080 bound to: 16'b0000001001110100 
+WARNING: [Synth 8-6014] Unused sequential element Set_X_reg was removed.  [D:/HDMI_Demo/HDMI_Demo.srcs/sources_1/new/Driver_HDMI.v:85]
+WARNING: [Synth 8-6014] Unused sequential element Set_Y_reg was removed.  [D:/HDMI_Demo/HDMI_Demo.srcs/sources_1/new/Driver_HDMI.v:86]
+WARNING: [Synth 8-6014] Unused sequential element H_De_reg was removed.  [D:/HDMI_Demo/HDMI_Demo.srcs/sources_1/new/Driver_HDMI.v:169]
+WARNING: [Synth 8-6014] Unused sequential element V_De_reg was removed.  [D:/HDMI_Demo/HDMI_Demo.srcs/sources_1/new/Driver_HDMI.v:185]
+WARNING: [Synth 8-6014] Unused sequential element RGB_VDE_reg was removed.  [D:/HDMI_Demo/HDMI_Demo.srcs/sources_1/new/Driver_HDMI.v:205]
+WARNING: [Synth 8-6014] Unused sequential element RGB_HSync_reg was removed.  [D:/HDMI_Demo/HDMI_Demo.srcs/sources_1/new/Driver_HDMI.v:215]
+WARNING: [Synth 8-6014] Unused sequential element RGB_VSync_reg was removed.  [D:/HDMI_Demo/HDMI_Demo.srcs/sources_1/new/Driver_HDMI.v:231]
+INFO: [Synth 8-6155] done synthesizing module 'Driver_HDMI' (3#1) [D:/HDMI_Demo/HDMI_Demo.srcs/sources_1/new/Driver_HDMI.v:24]
+WARNING: [Synth 8-350] instance 'Driver_HDMI_0' of module 'Driver_HDMI' requires 7 connections, but only 6 given [D:/HDMI_Demo/HDMI_Demo.srcs/sources_1/new/HDMI_Demo.v:73]
+INFO: [Synth 8-6157] synthesizing module 'Driver_MIPI' [D:/HDMI_Demo/HDMI_Demo.srcs/sources_1/new/Driver_MIPI.v:23]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_1' [D:/HDMI_Demo/HDMI_Demo.runs/synth_1/.Xil/Vivado-3376-hollander/realtime/clk_wiz_1_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_1' (4#1) [D:/HDMI_Demo/HDMI_Demo.runs/synth_1/.Xil/Vivado-3376-hollander/realtime/clk_wiz_1_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'csi2_d_phy_rx_0' [D:/HDMI_Demo/HDMI_Demo.runs/synth_1/.Xil/Vivado-3376-hollander/realtime/csi2_d_phy_rx_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'csi2_d_phy_rx_0' (5#1) [D:/HDMI_Demo/HDMI_Demo.runs/synth_1/.Xil/Vivado-3376-hollander/realtime/csi2_d_phy_rx_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'Data_Read' of module 'csi2_d_phy_rx_0' requires 33 connections, but only 25 given [D:/HDMI_Demo/HDMI_Demo.srcs/sources_1/new/Driver_MIPI.v:75]
+INFO: [Synth 8-6157] synthesizing module 'csi_to_axis_0' [D:/HDMI_Demo/HDMI_Demo.runs/synth_1/.Xil/Vivado-3376-hollander/realtime/csi_to_axis_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'csi_to_axis_0' (6#1) [D:/HDMI_Demo/HDMI_Demo.runs/synth_1/.Xil/Vivado-3376-hollander/realtime/csi_to_axis_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'Driver_Csi_To_Dvp' [D:/HDMI_Demo/HDMI_Demo.srcs/sources_1/new/Driver_Csi_To_Dvp.v:23]
+	Parameter Default_AXIS_TREADY bound to: 1'b1 
+	Parameter WIDTH bound to: 12 - type: integer 
+	Parameter HSIZE bound to: 1280 - type: integer 
+	Parameter HFP bound to: 1390 - type: integer 
+	Parameter HSP bound to: 1430 - type: integer 
+	Parameter HMAX bound to: 1650 - type: integer 
+	Parameter VSIZE bound to: 720 - type: integer 
+	Parameter VFP bound to: 725 - type: integer 
+	Parameter VSP bound to: 730 - type: integer 
+	Parameter VMAX bound to: 750 - type: integer 
+	Parameter HSPP bound to: 0 - type: integer 
+	Parameter VSPP bound to: 0 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'AXIS_Data_RAM' [D:/HDMI_Demo/HDMI_Demo.runs/synth_1/.Xil/Vivado-3376-hollander/realtime/AXIS_Data_RAM_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'AXIS_Data_RAM' (7#1) [D:/HDMI_Demo/HDMI_Demo.runs/synth_1/.Xil/Vivado-3376-hollander/realtime/AXIS_Data_RAM_stub.v:6]
+WARNING: [Synth 8-689] width (11) of port connection 'addrb' does not match port width (10) of module 'AXIS_Data_RAM' [D:/HDMI_Demo/HDMI_Demo.srcs/sources_1/new/Driver_Csi_To_Dvp.v:186]
+WARNING: [Synth 8-689] width (8) of port connection 'doutb' does not match port width (16) of module 'AXIS_Data_RAM' [D:/HDMI_Demo/HDMI_Demo.srcs/sources_1/new/Driver_Csi_To_Dvp.v:187]
+INFO: [Synth 8-6155] done synthesizing module 'Driver_Csi_To_Dvp' (8#1) [D:/HDMI_Demo/HDMI_Demo.srcs/sources_1/new/Driver_Csi_To_Dvp.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Driver_Bayer_To_RGB' [D:/HDMI_Demo/HDMI_Demo.srcs/sources_1/new/Driver_Bayer_To_RGB.v:23]
+	Parameter WIDTH bound to: 12 - type: integer 
+	Parameter HSIZE bound to: 1280 - type: integer 
+	Parameter HFP bound to: 1390 - type: integer 
+	Parameter HSP bound to: 1430 - type: integer 
+	Parameter HMAX bound to: 1650 - type: integer 
+	Parameter VSIZE bound to: 720 - type: integer 
+	Parameter VFP bound to: 725 - type: integer 
+	Parameter VSP bound to: 730 - type: integer 
+	Parameter VMAX bound to: 750 - type: integer 
+	Parameter HSPP bound to: 0 - type: integer 
+	Parameter VSPP bound to: 0 - type: integer 
+	Parameter DELAY_LINE bound to: 2 - type: integer 
+	Parameter ST_IDLE bound to: 3'b000 
+	Parameter ST_IDLE_START bound to: 3'b001 
+	Parameter ST_PATTERN0 bound to: 3'b010 
+	Parameter ST_PATTERN1 bound to: 3'b011 
+	Parameter ST_IDLE_GR bound to: 3'b100 
+	Parameter ST_PATTERN2 bound to: 3'b101 
+	Parameter ST_PATTERN3 bound to: 3'b110 
+INFO: [Synth 8-6157] synthesizing module 'RAM_Line' [D:/HDMI_Demo/HDMI_Demo.runs/synth_1/.Xil/Vivado-3376-hollander/realtime/RAM_Line_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'RAM_Line' (9#1) [D:/HDMI_Demo/HDMI_Demo.runs/synth_1/.Xil/Vivado-3376-hollander/realtime/RAM_Line_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Driver_Bayer_To_RGB' (10#1) [D:/HDMI_Demo/HDMI_Demo.srcs/sources_1/new/Driver_Bayer_To_RGB.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Driver_MIPI' (11#1) [D:/HDMI_Demo/HDMI_Demo.srcs/sources_1/new/Driver_MIPI.v:23]
+INFO: [Synth 8-6157] synthesizing module 'IOBUF' [D:/vivado2018.3/Vivado/2018.3/scripts/rt/data/unisim_comp.v:23615]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IOBUF' (12#1) [D:/vivado2018.3/Vivado/2018.3/scripts/rt/data/unisim_comp.v:23615]
+INFO: [Synth 8-6157] synthesizing module 'OV5647_Init' [D:/HDMI_Demo/HDMI_Demo.srcs/sources_1/new/OV5647_Init.v:23]
+	Parameter SLAVE_ADDRESS bound to: 8'b01101100 
+	Parameter INITIAL_NUM bound to: 8'b01011000 
+	Parameter REG_ADDR2_EN bound to: 1'b1 
+	Parameter WR_HOLD_T bound to: 4'b1010 
+	Parameter WR_VALID bound to: 1'b1 
+	Parameter WAIT_DELAY bound to: 20'b00011000011010100000 
+	Parameter IDLE bound to: 2'b00 
+	Parameter START bound to: 2'b01 
+	Parameter WAIT bound to: 2'b10 
+	Parameter END bound to: 2'b11 
+INFO: [Synth 8-6157] synthesizing module 'ROM_OV5647' [D:/HDMI_Demo/HDMI_Demo.srcs/sources_1/new/OV5647_Init.v:243]
+INFO: [Synth 8-6155] done synthesizing module 'ROM_OV5647' (13#1) [D:/HDMI_Demo/HDMI_Demo.srcs/sources_1/new/OV5647_Init.v:243]
+INFO: [Synth 8-6157] synthesizing module 'Trigger_Generator' [D:/HDMI_Demo/HDMI_Demo.srcs/sources_1/new/Trigger_Generator.v:24]
+	Parameter ST_WAIT bound to: 2'b00 
+	Parameter ST_START bound to: 2'b01 
+	Parameter ST_HOLD bound to: 2'b10 
+	Parameter ST_END bound to: 2'b11 
+INFO: [Synth 8-6155] done synthesizing module 'Trigger_Generator' (14#1) [D:/HDMI_Demo/HDMI_Demo.srcs/sources_1/new/Trigger_Generator.v:24]
+WARNING: [Synth 8-6014] Unused sequential element en_rd_rom_reg was removed.  [D:/HDMI_Demo/HDMI_Demo.srcs/sources_1/new/OV5647_Init.v:133]
+INFO: [Synth 8-6155] done synthesizing module 'OV5647_Init' (15#1) [D:/HDMI_Demo/HDMI_Demo.srcs/sources_1/new/OV5647_Init.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Driver_IIC' [D:/HDMI_Demo/HDMI_Demo.srcs/sources_1/new/Driver_IIC.v:23]
+	Parameter System_Clk_MHz bound to: 13'b0000001100100 
+	Parameter Set_IIC_SCL_kHz bound to: 13'b0000001100100 
+	Parameter SCL_Divider bound to: 13'b0000000000001 
+	Parameter SCL_SUM bound to: 13'b0001111101000 
+	Parameter SCL_H_START bound to: 0 - type: integer 
+	Parameter SCL_H_CENTER bound to: 249 - type: integer 
+	Parameter SCL_L_START bound to: 499 - type: integer 
+	Parameter SCL_L_CENTER bound to: 749 - type: integer 
+	Parameter ST_IDLE bound to: 5'b00000 
+	Parameter ST_START bound to: 5'b00001 
+	Parameter ST_W_SADDR bound to: 5'b00010 
+	Parameter ST_ACK_0 bound to: 5'b00011 
+	Parameter ST_W_ADDR_H bound to: 5'b00100 
+	Parameter ST_ACK_1 bound to: 5'b00101 
+	Parameter ST_W_ADDR_L bound to: 5'b00110 
+	Parameter ST_ACK_2 bound to: 5'b00111 
+	Parameter ST_W_DATA bound to: 5'b01000 
+	Parameter ST_ACK_3 bound to: 5'b01001 
+	Parameter ST_START_R bound to: 5'b01010 
+	Parameter ST_W_SADDR_R bound to: 5'b01011 
+	Parameter ST_ACK_4 bound to: 5'b01100 
+	Parameter ST_R_DATA bound to: 5'b01101 
+	Parameter ST_NACK bound to: 5'b01110 
+	Parameter ST_STOP bound to: 5'b01111 
+INFO: [Synth 8-155] case statement is not full and has no default [D:/HDMI_Demo/HDMI_Demo.srcs/sources_1/new/Driver_IIC.v:389]
+WARNING: [Synth 8-5788] Register data_r_o_reg in module Driver_IIC is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/HDMI_Demo/HDMI_Demo.srcs/sources_1/new/Driver_IIC.v:113]
+INFO: [Synth 8-6155] done synthesizing module 'Driver_IIC' (16#1) [D:/HDMI_Demo/HDMI_Demo.srcs/sources_1/new/Driver_IIC.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Image_Process' [D:/HDMI_Demo/HDMI_Demo.srcs/sources_1/new/Image_Process_Edge.v:23]
+	Parameter RGB2Gray_Accuracy_N bound to: 8 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'Edge_Check_0' [D:/HDMI_Demo/HDMI_Demo.runs/synth_1/.Xil/Vivado-3376-hollander/realtime/Edge_Check_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Edge_Check_0' (17#1) [D:/HDMI_Demo/HDMI_Demo.runs/synth_1/.Xil/Vivado-3376-hollander/realtime/Edge_Check_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'RGB_To_Gray_0' [D:/HDMI_Demo/HDMI_Demo.runs/synth_1/.Xil/Vivado-3376-hollander/realtime/RGB_To_Gray_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'RGB_To_Gray_0' (18#1) [D:/HDMI_Demo/HDMI_Demo.runs/synth_1/.Xil/Vivado-3376-hollander/realtime/RGB_To_Gray_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'Delay_Signal' [D:/HDMI_Demo/HDMI_Demo.srcs/sources_1/new/Delay_Signal.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'Delay_Signal' (19#1) [D:/HDMI_Demo/HDMI_Demo.srcs/sources_1/new/Delay_Signal.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'Image_Process' (20#1) [D:/HDMI_Demo/HDMI_Demo.srcs/sources_1/new/Image_Process_Edge.v:23]
+INFO: [Synth 8-6157] synthesizing module 'digitalRcg' [D:/HDMI_Demo/HDMI_Demo.srcs/sources_1/new/digitalRcg.v:23]
+	Parameter IDLE bound to: 5'b00001 
+	Parameter FRAME1 bound to: 5'b00010 
+	Parameter FRAME2 bound to: 5'b00100 
+	Parameter FRAME3 bound to: 5'b01000 
+	Parameter FRAME4 bound to: 5'b10000 
+	Parameter H_PIXEL bound to: 799 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [D:/HDMI_Demo/HDMI_Demo.srcs/sources_1/new/digitalRcg.v:208]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/HDMI_Demo/HDMI_Demo.srcs/sources_1/new/digitalRcg.v:269]
+INFO: [Synth 8-6157] synthesizing module 'ram' [D:/HDMI_Demo/HDMI_Demo.srcs/sources_1/new/digitalRcg.v:600]
+WARNING: [Synth 8-5788] Register mem_reg in module ram is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code 
+WARNING: [Synth 8-4767] Trying to implement RAM 'mem_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+Reason is one or more of the following :
+	1: RAM is sensitive to asynchronous reset signal. this RTL style is not supported. 
+RAM "mem_reg" dissolved into registers
+INFO: [Synth 8-6155] done synthesizing module 'ram' (21#1) [D:/HDMI_Demo/HDMI_Demo.srcs/sources_1/new/digitalRcg.v:600]
+WARNING: [Synth 8-3848] Net oe in module/entity digitalRcg does not have driver. [D:/HDMI_Demo/HDMI_Demo.srcs/sources_1/new/digitalRcg.v:62]
+INFO: [Synth 8-6155] done synthesizing module 'digitalRcg' (22#1) [D:/HDMI_Demo/HDMI_Demo.srcs/sources_1/new/digitalRcg.v:23]
+WARNING: [Synth 8-689] width (12) of port connection 'hcnt' does not match port width (11) of module 'digitalRcg' [D:/HDMI_Demo/HDMI_Demo.srcs/sources_1/new/HDMI_Demo.v:233]
+WARNING: [Synth 8-689] width (12) of port connection 'vcnt' does not match port width (10) of module 'digitalRcg' [D:/HDMI_Demo/HDMI_Demo.srcs/sources_1/new/HDMI_Demo.v:234]
+WARNING: [Synth 8-350] instance 'digitalRcg_0' of module 'digitalRcg' requires 47 connections, but only 46 given [D:/HDMI_Demo/HDMI_Demo.srcs/sources_1/new/HDMI_Demo.v:229]
+INFO: [Synth 8-6157] synthesizing module 'identf_number' [D:/HDMI_Demo/HDMI_Demo.srcs/sources_1/new/identf_number.v:23]
+	Parameter AREA bound to: 150000 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element flagx_reg_reg was removed.  [D:/HDMI_Demo/HDMI_Demo.srcs/sources_1/new/identf_number.v:183]
+INFO: [Synth 8-6155] done synthesizing module 'identf_number' (23#1) [D:/HDMI_Demo/HDMI_Demo.srcs/sources_1/new/identf_number.v:23]
+INFO: [Synth 8-6157] synthesizing module 'disp_data1' [D:/HDMI_Demo/HDMI_Demo.srcs/sources_1/new/disp_data1.v:23]
+	Parameter c_data_min bound to: 460 - type: integer 
+	Parameter c_data_max bound to: 480 - type: integer 
+	Parameter r_data_min bound to: 400 - type: integer 
+	Parameter r_data_max bound to: 440 - type: integer 
+	Parameter addrmax_data bound to: 800 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'NUM0' [D:/SDRAM_VGA/ROM/NUM0_bb.v:34]
+INFO: [Synth 8-6155] done synthesizing module 'NUM0' (24#1) [D:/SDRAM_VGA/ROM/NUM0_bb.v:34]
+INFO: [Synth 8-6157] synthesizing module 'num1' [D:/SDRAM_VGA/ROM/num1_bb.v:34]
+INFO: [Synth 8-6155] done synthesizing module 'num1' (25#1) [D:/SDRAM_VGA/ROM/num1_bb.v:34]
+INFO: [Synth 8-6157] synthesizing module 'num2' [D:/SDRAM_VGA/ROM/num2_bb.v:34]
+INFO: [Synth 8-6155] done synthesizing module 'num2' (26#1) [D:/SDRAM_VGA/ROM/num2_bb.v:34]
+INFO: [Synth 8-6157] synthesizing module 'num3' [D:/SDRAM_VGA/ROM/num3_bb.v:34]
+INFO: [Synth 8-6155] done synthesizing module 'num3' (27#1) [D:/SDRAM_VGA/ROM/num3_bb.v:34]
+INFO: [Synth 8-6157] synthesizing module 'num4' [D:/SDRAM_VGA/ROM/num4_bb.v:34]
+INFO: [Synth 8-6155] done synthesizing module 'num4' (28#1) [D:/SDRAM_VGA/ROM/num4_bb.v:34]
+WARNING: [Synth 8-689] width (1) of port connection 'q' does not match port width (8) of module 'num4' [D:/HDMI_Demo/HDMI_Demo.srcs/sources_1/new/disp_data1.v:146]
+INFO: [Synth 8-6157] synthesizing module 'num5' [D:/SDRAM_VGA/ROM/num5_bb.v:34]
+INFO: [Synth 8-6155] done synthesizing module 'num5' (29#1) [D:/SDRAM_VGA/ROM/num5_bb.v:34]
+INFO: [Synth 8-6157] synthesizing module 'num6' [D:/SDRAM_VGA/ROM/num6_bb.v:34]
+INFO: [Synth 8-6155] done synthesizing module 'num6' (30#1) [D:/SDRAM_VGA/ROM/num6_bb.v:34]
+INFO: [Synth 8-6157] synthesizing module 'num7' [D:/SDRAM_VGA/ROM/num7_bb.v:34]
+INFO: [Synth 8-6155] done synthesizing module 'num7' (31#1) [D:/SDRAM_VGA/ROM/num7_bb.v:34]
+INFO: [Synth 8-6157] synthesizing module 'num8' [D:/SDRAM_VGA/ROM/num8_bb.v:34]
+INFO: [Synth 8-6155] done synthesizing module 'num8' (32#1) [D:/SDRAM_VGA/ROM/num8_bb.v:34]
+INFO: [Synth 8-6157] synthesizing module 'num9' [D:/SDRAM_VGA/ROM/num9_bb.v:34]
+INFO: [Synth 8-6155] done synthesizing module 'num9' (33#1) [D:/SDRAM_VGA/ROM/num9_bb.v:34]
+INFO: [Synth 8-6155] done synthesizing module 'disp_data1' (34#1) [D:/HDMI_Demo/HDMI_Demo.srcs/sources_1/new/disp_data1.v:23]
+INFO: [Synth 8-6157] synthesizing module 'disp_data2' [D:/SDRAM_VGA/SRC/disp_data2.v:1]
+	Parameter c_data_min bound to: 500 - type: integer 
+	Parameter c_data_max bound to: 520 - type: integer 
+	Parameter r_data_min bound to: 400 - type: integer 
+	Parameter r_data_max bound to: 440 - type: integer 
+	Parameter addrmax_data bound to: 800 - type: integer 
+WARNING: [Synth 8-689] width (1) of port connection 'q' does not match port width (8) of module 'num4' [D:/SDRAM_VGA/SRC/disp_data2.v:124]
+INFO: [Synth 8-6155] done synthesizing module 'disp_data2' (35#1) [D:/SDRAM_VGA/SRC/disp_data2.v:1]
+INFO: [Synth 8-6157] synthesizing module 'disp_data3' [D:/SDRAM_VGA/SRC/disp_data3.v:1]
+	Parameter c_data_min bound to: 540 - type: integer 
+	Parameter c_data_max bound to: 560 - type: integer 
+	Parameter r_data_min bound to: 400 - type: integer 
+	Parameter r_data_max bound to: 440 - type: integer 
+	Parameter addrmax_data bound to: 800 - type: integer 
+WARNING: [Synth 8-689] width (1) of port connection 'q' does not match port width (8) of module 'num4' [D:/SDRAM_VGA/SRC/disp_data3.v:124]
+INFO: [Synth 8-6155] done synthesizing module 'disp_data3' (36#1) [D:/SDRAM_VGA/SRC/disp_data3.v:1]
+INFO: [Synth 8-6157] synthesizing module 'disp_data4' [D:/SDRAM_VGA/SRC/disp_data4.v:1]
+	Parameter c_data_min bound to: 580 - type: integer 
+	Parameter c_data_max bound to: 600 - type: integer 
+	Parameter r_data_min bound to: 400 - type: integer 
+	Parameter r_data_max bound to: 440 - type: integer 
+	Parameter addrmax_data bound to: 800 - type: integer 
+WARNING: [Synth 8-689] width (1) of port connection 'q' does not match port width (8) of module 'num4' [D:/SDRAM_VGA/SRC/disp_data4.v:124]
+INFO: [Synth 8-6155] done synthesizing module 'disp_data4' (37#1) [D:/SDRAM_VGA/SRC/disp_data4.v:1]
+WARNING: [Synth 8-3848] Net iic_read in module/entity HDMI_Demo does not have driver. [D:/HDMI_Demo/HDMI_Demo.srcs/sources_1/new/HDMI_Demo.v:124]
+WARNING: [Synth 8-3848] Net post_img_Y_mean in module/entity HDMI_Demo does not have driver. [D:/HDMI_Demo/HDMI_Demo.srcs/sources_1/new/HDMI_Demo.v:207]
+WARNING: [Synth 8-3848] Net post_frame_vsync_mean in module/entity HDMI_Demo does not have driver. [D:/HDMI_Demo/HDMI_Demo.srcs/sources_1/new/HDMI_Demo.v:203]
+WARNING: [Synth 8-3848] Net post_frame_href_mean in module/entity HDMI_Demo does not have driver. [D:/HDMI_Demo/HDMI_Demo.srcs/sources_1/new/HDMI_Demo.v:204]
+WARNING: [Synth 8-3848] Net per_frame_clken_gray in module/entity HDMI_Demo does not have driver. [D:/HDMI_Demo/HDMI_Demo.srcs/sources_1/new/HDMI_Demo.v:175]
+WARNING: [Synth 8-3848] Net post_img_Y_gray in module/entity HDMI_Demo does not have driver. [D:/HDMI_Demo/HDMI_Demo.srcs/sources_1/new/HDMI_Demo.v:206]
+INFO: [Synth 8-6155] done synthesizing module 'HDMI_Demo' (38#1) [D:/HDMI_Demo/HDMI_Demo.srcs/sources_1/new/HDMI_Demo.v:23]
+WARNING: [Synth 8-3331] design ram has unconnected port waddr[11]
+WARNING: [Synth 8-3331] design ram has unconnected port waddr[10]
+WARNING: [Synth 8-3331] design ram has unconnected port raddr[11]
+WARNING: [Synth 8-3331] design ram has unconnected port raddr[10]
+WARNING: [Synth 8-3331] design digitalRcg has unconnected port oe
+WARNING: [Synth 8-3331] design digitalRcg has unconnected port ie
+WARNING: [Synth 8-3331] design digitalRcg has unconnected port post_img_Y_mean[7]
+WARNING: [Synth 8-3331] design digitalRcg has unconnected port post_img_Y_mean[6]
+WARNING: [Synth 8-3331] design digitalRcg has unconnected port post_img_Y_mean[5]
+WARNING: [Synth 8-3331] design digitalRcg has unconnected port post_img_Y_mean[4]
+WARNING: [Synth 8-3331] design digitalRcg has unconnected port post_img_Y_mean[3]
+WARNING: [Synth 8-3331] design digitalRcg has unconnected port post_img_Y_mean[2]
+WARNING: [Synth 8-3331] design digitalRcg has unconnected port post_img_Y_mean[1]
+WARNING: [Synth 8-3331] design digitalRcg has unconnected port post_img_Y_mean[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 591.199 ; gain = 222.188
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin MIPI_Camera_IIC:i_iic_read to constant 0 [D:/HDMI_Demo/HDMI_Demo.srcs/sources_1/new/HDMI_Demo.v:142]
+WARNING: [Synth 8-3295] tying undriven pin digitalRcg_0:vga_vsync1 to constant 0 [D:/HDMI_Demo/HDMI_Demo.srcs/sources_1/new/HDMI_Demo.v:229]
+WARNING: [Synth 8-3295] tying undriven pin digitalRcg_0:vga_hsync1 to constant 0 [D:/HDMI_Demo/HDMI_Demo.srcs/sources_1/new/HDMI_Demo.v:229]
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 591.199 ; gain = 222.188
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 591.199 ; gain = 222.188
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7s15ftgb196-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/Edge_Check_0/Edge_Check_0/Edge_Check_0_in_context.xdc] for cell 'Image_Process_Edge/Edge_Check0'
+Finished Parsing XDC File [d:/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/Edge_Check_0/Edge_Check_0/Edge_Check_0_in_context.xdc] for cell 'Image_Process_Edge/Edge_Check0'
+Parsing XDC File [d:/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'clk_10'
+Finished Parsing XDC File [d:/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'clk_10'
+Parsing XDC File [d:/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/rgb2dvi_0_1/rgb2dvi_0/rgb2dvi_0_in_context.xdc] for cell 'rgb2dvi'
+Finished Parsing XDC File [d:/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/rgb2dvi_0_1/rgb2dvi_0/rgb2dvi_0_in_context.xdc] for cell 'rgb2dvi'
+Parsing XDC File [d:/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/RGB_To_Gray_0/RGB_To_Gray_0/RGB_To_Gray_0_in_context.xdc] for cell 'Image_Process_Edge/RGB2Gray'
+Finished Parsing XDC File [d:/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/RGB_To_Gray_0/RGB_To_Gray_0/RGB_To_Gray_0_in_context.xdc] for cell 'Image_Process_Edge/RGB2Gray'
+Parsing XDC File [d:/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/RAM_Line/RAM_Line/RAM_Line_in_context.xdc] for cell 'MIPI_Trans_Driver/Driver_Bayer_To_RGB0/RAM_Line_Buff0'
+Finished Parsing XDC File [d:/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/RAM_Line/RAM_Line/RAM_Line_in_context.xdc] for cell 'MIPI_Trans_Driver/Driver_Bayer_To_RGB0/RAM_Line_Buff0'
+Parsing XDC File [d:/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/RAM_Line/RAM_Line/RAM_Line_in_context.xdc] for cell 'MIPI_Trans_Driver/Driver_Bayer_To_RGB0/RAM_Line_Buff1'
+Finished Parsing XDC File [d:/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/RAM_Line/RAM_Line/RAM_Line_in_context.xdc] for cell 'MIPI_Trans_Driver/Driver_Bayer_To_RGB0/RAM_Line_Buff1'
+Parsing XDC File [d:/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/RAM_Line/RAM_Line/RAM_Line_in_context.xdc] for cell 'MIPI_Trans_Driver/Driver_Bayer_To_RGB0/RAM_Line_Buff2'
+Finished Parsing XDC File [d:/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/RAM_Line/RAM_Line/RAM_Line_in_context.xdc] for cell 'MIPI_Trans_Driver/Driver_Bayer_To_RGB0/RAM_Line_Buff2'
+Parsing XDC File [d:/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/csi2_d_phy_rx_0/csi2_d_phy_rx_0/csi2_d_phy_rx_0_in_context.xdc] for cell 'MIPI_Trans_Driver/Data_Read'
+Finished Parsing XDC File [d:/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/csi2_d_phy_rx_0/csi2_d_phy_rx_0/csi2_d_phy_rx_0_in_context.xdc] for cell 'MIPI_Trans_Driver/Data_Read'
+Parsing XDC File [d:/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/AXIS_Data_RAM/AXIS_Data_RAM/AXIS_Data_RAM_in_context.xdc] for cell 'MIPI_Trans_Driver/Driver_Csi_To_Dvp0/RAM_AXIS'
+Finished Parsing XDC File [d:/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/AXIS_Data_RAM/AXIS_Data_RAM/AXIS_Data_RAM_in_context.xdc] for cell 'MIPI_Trans_Driver/Driver_Csi_To_Dvp0/RAM_AXIS'
+Parsing XDC File [d:/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/csi_to_axis_0/csi_to_axis_0/csi_to_axis_0_in_context.xdc] for cell 'MIPI_Trans_Driver/Data_To_Csi'
+Finished Parsing XDC File [d:/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/csi_to_axis_0/csi_to_axis_0/csi_to_axis_0_in_context.xdc] for cell 'MIPI_Trans_Driver/Data_To_Csi'
+Parsing XDC File [d:/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1/clk_wiz_1_in_context.xdc] for cell 'MIPI_Trans_Driver/camera_clock'
+Finished Parsing XDC File [d:/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1/clk_wiz_1_in_context.xdc] for cell 'MIPI_Trans_Driver/camera_clock'
+Parsing XDC File [D:/HDMI_Demo/HDMI_Demo.srcs/constrs_1/new/system.xdc]
+WARNING: [Vivado 12-508] No pins matched 'MIPI_Trans_Driver/Data_To_Csi/U0/lane_align_inst/err_req_reg/C'. [D:/HDMI_Demo/HDMI_Demo.srcs/constrs_1/new/system.xdc:21]
+WARNING: [Vivado 12-508] No pins matched 'MIPI_Trans_Driver/Data_Read/U0/clock_upd_req_reg/D'. [D:/HDMI_Demo/HDMI_Demo.srcs/constrs_1/new/system.xdc:21]
+WARNING: [Vivado 12-508] No pins matched 'MIPI_Trans_Driver/Data_To_Csi/U0/lane_align_inst/err_req_reg/C'. [D:/HDMI_Demo/HDMI_Demo.srcs/constrs_1/new/system.xdc:22]
+WARNING: [Vivado 12-508] No pins matched 'MIPI_Trans_Driver/Data_Read/U0/clock_upd_req_reg/D'. [D:/HDMI_Demo/HDMI_Demo.srcs/constrs_1/new/system.xdc:22]
+Finished Parsing XDC File [D:/HDMI_Demo/HDMI_Demo.srcs/constrs_1/new/system.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [D:/HDMI_Demo/HDMI_Demo.srcs/constrs_1/new/system.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/HDMI_Demo_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/HDMI_Demo/HDMI_Demo.srcs/constrs_1/new/system.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/HDMI_Demo_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/HDMI_Demo_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [D:/HDMI_Demo/HDMI_Demo.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/HDMI_Demo/HDMI_Demo.runs/synth_1/dont_touch.xdc]
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 897.020 ; gain = 0.000
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 897.020 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 1 instances
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 897.020 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.053 . Memory (MB): peak = 897.020 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'MIPI_Trans_Driver/Driver_Bayer_To_RGB0/RAM_Line_Buff0' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'MIPI_Trans_Driver/Driver_Bayer_To_RGB0/RAM_Line_Buff1' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'MIPI_Trans_Driver/Driver_Bayer_To_RGB0/RAM_Line_Buff2' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'MIPI_Trans_Driver/Driver_Csi_To_Dvp0/RAM_AXIS' at clock pin 'clka' is different from the actual clock period '4.761', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:24 ; elapsed = 00:00:31 . Memory (MB): peak = 897.020 ; gain = 528.008
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7s15ftgb196-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:24 ; elapsed = 00:00:31 . Memory (MB): peak = 897.020 ; gain = 528.008
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for clk_100MHz. (constraint file  d:/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0/clk_wiz_0_in_context.xdc, line 4).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk_100MHz. (constraint file  d:/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0/clk_wiz_0_in_context.xdc, line 5).
+Applied set_property IO_BUFFER_TYPE = NONE for TMDS_Tx_Clk_N. (constraint file  d:/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/rgb2dvi_0_1/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 1).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDS_Tx_Clk_N. (constraint file  d:/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/rgb2dvi_0_1/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 2).
+Applied set_property IO_BUFFER_TYPE = NONE for TMDS_Tx_Clk_P. (constraint file  d:/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/rgb2dvi_0_1/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDS_Tx_Clk_P. (constraint file  d:/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/rgb2dvi_0_1/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for TMDS_Tx_Data_N[0]. (constraint file  d:/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/rgb2dvi_0_1/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 5).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDS_Tx_Data_N[0]. (constraint file  d:/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/rgb2dvi_0_1/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 6).
+Applied set_property IO_BUFFER_TYPE = NONE for TMDS_Tx_Data_N[1]. (constraint file  d:/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/rgb2dvi_0_1/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 7).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDS_Tx_Data_N[1]. (constraint file  d:/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/rgb2dvi_0_1/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 8).
+Applied set_property IO_BUFFER_TYPE = NONE for TMDS_Tx_Data_N[2]. (constraint file  d:/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/rgb2dvi_0_1/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 9).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDS_Tx_Data_N[2]. (constraint file  d:/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/rgb2dvi_0_1/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 10).
+Applied set_property IO_BUFFER_TYPE = NONE for TMDS_Tx_Data_P[0]. (constraint file  d:/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/rgb2dvi_0_1/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 11).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDS_Tx_Data_P[0]. (constraint file  d:/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/rgb2dvi_0_1/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 12).
+Applied set_property IO_BUFFER_TYPE = NONE for TMDS_Tx_Data_P[1]. (constraint file  d:/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/rgb2dvi_0_1/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 13).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDS_Tx_Data_P[1]. (constraint file  d:/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/rgb2dvi_0_1/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 14).
+Applied set_property IO_BUFFER_TYPE = NONE for TMDS_Tx_Data_P[2]. (constraint file  d:/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/rgb2dvi_0_1/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 15).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDS_Tx_Data_P[2]. (constraint file  d:/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/rgb2dvi_0_1/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 16).
+Applied set_property IO_BUFFER_TYPE = NONE for i_clk_rx_data_n. (constraint file  d:/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/csi2_d_phy_rx_0/csi2_d_phy_rx_0/csi2_d_phy_rx_0_in_context.xdc, line 1).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for i_clk_rx_data_n. (constraint file  d:/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/csi2_d_phy_rx_0/csi2_d_phy_rx_0/csi2_d_phy_rx_0_in_context.xdc, line 2).
+Applied set_property IO_BUFFER_TYPE = NONE for i_clk_rx_data_p. (constraint file  d:/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/csi2_d_phy_rx_0/csi2_d_phy_rx_0/csi2_d_phy_rx_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for i_clk_rx_data_p. (constraint file  d:/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/csi2_d_phy_rx_0/csi2_d_phy_rx_0/csi2_d_phy_rx_0_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for i_rx_data_n[0]. (constraint file  d:/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/csi2_d_phy_rx_0/csi2_d_phy_rx_0/csi2_d_phy_rx_0_in_context.xdc, line 5).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for i_rx_data_n[0]. (constraint file  d:/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/csi2_d_phy_rx_0/csi2_d_phy_rx_0/csi2_d_phy_rx_0_in_context.xdc, line 6).
+Applied set_property IO_BUFFER_TYPE = NONE for i_rx_data_n[1]. (constraint file  d:/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/csi2_d_phy_rx_0/csi2_d_phy_rx_0/csi2_d_phy_rx_0_in_context.xdc, line 7).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for i_rx_data_n[1]. (constraint file  d:/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/csi2_d_phy_rx_0/csi2_d_phy_rx_0/csi2_d_phy_rx_0_in_context.xdc, line 8).
+Applied set_property IO_BUFFER_TYPE = NONE for i_rx_data_p[0]. (constraint file  d:/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/csi2_d_phy_rx_0/csi2_d_phy_rx_0/csi2_d_phy_rx_0_in_context.xdc, line 9).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for i_rx_data_p[0]. (constraint file  d:/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/csi2_d_phy_rx_0/csi2_d_phy_rx_0/csi2_d_phy_rx_0_in_context.xdc, line 10).
+Applied set_property IO_BUFFER_TYPE = NONE for i_rx_data_p[1]. (constraint file  d:/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/csi2_d_phy_rx_0/csi2_d_phy_rx_0/csi2_d_phy_rx_0_in_context.xdc, line 11).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for i_rx_data_p[1]. (constraint file  d:/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/csi2_d_phy_rx_0/csi2_d_phy_rx_0/csi2_d_phy_rx_0_in_context.xdc, line 12).
+Applied set_property DONT_TOUCH = true for Image_Process_Edge/Edge_Check0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for clk_10. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for rgb2dvi. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Image_Process_Edge/RGB2Gray. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for MIPI_Trans_Driver/Driver_Bayer_To_RGB0/RAM_Line_Buff0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for MIPI_Trans_Driver/Driver_Bayer_To_RGB0/RAM_Line_Buff1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for MIPI_Trans_Driver/Driver_Bayer_To_RGB0/RAM_Line_Buff2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for MIPI_Trans_Driver/Data_Read. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for MIPI_Trans_Driver/Driver_Csi_To_Dvp0/RAM_AXIS. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for MIPI_Trans_Driver/Data_To_Csi. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for MIPI_Trans_Driver/camera_clock. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:32 . Memory (MB): peak = 897.020 ; gain = 528.008
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "vdata" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "addrb" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "rgb_data_r" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'state_current_reg' in module 'Trigger_Generator'
+INFO: [Synth 8-5544] ROM "flg_hold" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "flg_iic_ok" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "flg_iic_ok" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "flg_initial" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "flg_delay" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "iic_scl_o" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "iic_write_req" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "iic_busy_o" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sda_dir_o" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-4471] merging register 'v_we_reg' into 'h_we_reg' [D:/HDMI_Demo/HDMI_Demo.srcs/sources_1/new/digitalRcg.v:249]
+INFO: [Synth 8-4471] merging register 'v_di_reg' into 'h_di_reg' [D:/HDMI_Demo/HDMI_Demo.srcs/sources_1/new/digitalRcg.v:252]
+INFO: [Synth 8-5544] ROM "n_state" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "n_state" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "n_state" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "n_state" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "n_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "pic_en1_r" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "n_state" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "n_state" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "n_state" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "n_state" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "n_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "pic_en1_r" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "n_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "number" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 ST_WAIT |                               00 |                               00
+                ST_START |                               01 |                               01
+                 ST_HOLD |                               10 |                               10
+                  ST_END |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_current_reg' using encoding 'sequential' in module 'Trigger_Generator'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:36 ; elapsed = 00:00:47 . Memory (MB): peak = 897.020 ; gain = 528.008
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 20    
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     20 Bit       Adders := 1     
+	   2 Input     14 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 12    
+	   2 Input     11 Bit       Adders := 16    
+	   3 Input     11 Bit       Adders := 8     
+	   2 Input     10 Bit       Adders := 11    
+	   4 Input     10 Bit       Adders := 2     
+	   3 Input     10 Bit       Adders := 4     
+	   2 Input      8 Bit       Adders := 4     
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 12    
+	   2 Input      4 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 2     
++---Registers : 
+	               55 Bit    Registers := 1     
+	               50 Bit    Registers := 1     
+	               24 Bit    Registers := 3     
+	               20 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	               14 Bit    Registers := 1     
+	               12 Bit    Registers := 5     
+	               11 Bit    Registers := 26    
+	               10 Bit    Registers := 26    
+	                8 Bit    Registers := 27    
+	                7 Bit    Registers := 2     
+	                6 Bit    Registers := 3     
+	                5 Bit    Registers := 15    
+	                4 Bit    Registers := 8     
+	                3 Bit    Registers := 7     
+	                2 Bit    Registers := 6     
+	                1 Bit    Registers := 1697  
++---Multipliers : 
+	                 7x32  Multipliers := 1     
+	                 6x32  Multipliers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input     20 Bit        Muxes := 1     
+	   2 Input     14 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 8     
+	   5 Input     12 Bit        Muxes := 3     
+	   2 Input     11 Bit        Muxes := 5     
+	   5 Input     11 Bit        Muxes := 3     
+	   2 Input     10 Bit        Muxes := 3     
+	   5 Input     10 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 14    
+	  12 Input      8 Bit        Muxes := 1     
+	   5 Input      8 Bit        Muxes := 7     
+	   2 Input      5 Bit        Muxes := 14    
+	   2 Input      4 Bit        Muxes := 7     
+	   3 Input      4 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 5     
+	   2 Input      3 Bit        Muxes := 14    
+	   2 Input      2 Bit        Muxes := 7     
+	   3 Input      2 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   8 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1707  
+	   5 Input      1 Bit        Muxes := 28    
+	   3 Input      1 Bit        Muxes := 2     
+	  12 Input      1 Bit        Muxes := 2     
+	   6 Input      1 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 4     
+	  11 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module HDMI_Demo 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
+Module Driver_HDMI 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 3     
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 1     
+Module Driver_Csi_To_Dvp 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input     10 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	               11 Bit    Registers := 3     
+	               10 Bit    Registers := 3     
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+Module Driver_Bayer_To_RGB 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 1     
+	   4 Input     10 Bit       Adders := 2     
+	   2 Input     10 Bit       Adders := 2     
++---Registers : 
+	               55 Bit    Registers := 1     
+	               50 Bit    Registers := 1     
+	               24 Bit    Registers := 2     
+	               11 Bit    Registers := 3     
+	               10 Bit    Registers := 5     
+	                8 Bit    Registers := 9     
+	                6 Bit    Registers := 3     
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 4     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 1     
+	   5 Input     10 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 4     
+	   3 Input      3 Bit        Muxes := 3     
+	   2 Input      3 Bit        Muxes := 2     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+	   5 Input      1 Bit        Muxes := 1     
+Module ROM_OV5647 
+Detailed RTL Component Info : 
++---Registers : 
+	               24 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+Module Trigger_Generator 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 3     
+Module OV5647_Init 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     20 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Registers : 
+	               20 Bit    Registers := 1     
+	                8 Bit    Registers := 4     
+	                7 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     20 Bit        Muxes := 1     
+	   8 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+Module Driver_IIC 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     14 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               14 Bit    Registers := 1     
+	                8 Bit    Registers := 6     
+	                5 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 10    
++---Muxes : 
+	   2 Input     14 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 3     
+	  12 Input      8 Bit        Muxes := 1     
+	   3 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 4     
+	   2 Input      3 Bit        Muxes := 2     
+	   3 Input      3 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 8     
+	   3 Input      1 Bit        Muxes := 2     
+	  12 Input      1 Bit        Muxes := 2     
+Module Delay_Signal 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+Module Image_Process 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+Module ram 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 801   
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 800   
+Module digitalRcg 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 5     
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 8     
+	   2 Input     11 Bit       Adders := 5     
+	   3 Input     11 Bit       Adders := 4     
+	   2 Input     10 Bit       Adders := 3     
+	   2 Input      8 Bit       Adders := 4     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               12 Bit    Registers := 5     
+	               11 Bit    Registers := 20    
+	               10 Bit    Registers := 6     
+	                8 Bit    Registers := 4     
+	                5 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 20    
++---Multipliers : 
+	                 7x32  Multipliers := 1     
+	                 6x32  Multipliers := 1     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 8     
+	   5 Input     12 Bit        Muxes := 3     
+	   2 Input     11 Bit        Muxes := 4     
+	   5 Input     11 Bit        Muxes := 3     
+	   2 Input     10 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 7     
+	   5 Input      8 Bit        Muxes := 7     
+	   2 Input      5 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 30    
+	   6 Input      1 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 27    
+Module identf_number 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 3     
+	   2 Input     12 Bit       Adders := 1     
+	   3 Input     11 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 2     
+	   3 Input     10 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 3     
++---Registers : 
+	               10 Bit    Registers := 2     
+	                5 Bit    Registers := 3     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 3     
+	   2 Input      3 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 12    
+	   8 Input      1 Bit        Muxes := 1     
+Module disp_data1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	  11 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module disp_data2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	  11 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module disp_data3 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	  11 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module disp_data4 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	  11 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 20 (col length:20)
+BRAMs: 20 (col length: RAMB18 20 RAMB36 10)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5546] ROM "Driver_Csi_To_Dvp0/vdata" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Driver_Csi_To_Dvp0/addrb" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "flg_initial" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "flg_delay" won't be mapped to RAM because it is too sparse
+Why this net has no driver: _order_recur <const0>
+Why this net has no driver: _order_recur <const0>
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Common 17-14] Message 'Synth 8-5546' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-5544] ROM "pic_en1_r" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "n_state" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "n_state" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "n_state" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "n_state" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+DSP Report: Generating DSP scany2_r1, operation Mode is: A*(B:0x5f).
+DSP Report: operator scany2_r1 is absorbed into DSP scany2_r1.
+DSP Report: Generating DSP scany1_r1, operation Mode is: A*(B:0x2a).
+DSP Report: operator scany1_r1 is absorbed into DSP scany1_r1.
+DSP Report: Generating DSP area_vaild1, operation Mode is: A*B.
+DSP Report: operator area_vaild1 is absorbed into DSP area_vaild1.
+DSP Report: Generating DSP area_vaild1, operation Mode is: A*B.
+DSP Report: operator area_vaild1 is absorbed into DSP area_vaild1.
+DSP Report: Generating DSP area_vaild1, operation Mode is: A*B.
+DSP Report: operator area_vaild1 is absorbed into DSP area_vaild1.
+DSP Report: Generating DSP area_vaild1, operation Mode is: A*B.
+DSP Report: operator area_vaild1 is absorbed into DSP area_vaild1.
+WARNING: [Synth 8-3331] design ram has unconnected port waddr[11]
+WARNING: [Synth 8-3331] design ram has unconnected port waddr[10]
+WARNING: [Synth 8-3331] design ram has unconnected port raddr[11]
+WARNING: [Synth 8-3331] design ram has unconnected port raddr[10]
+WARNING: [Synth 8-3331] design digitalRcg has unconnected port oe
+WARNING: [Synth 8-3331] design digitalRcg has unconnected port ie
+WARNING: [Synth 8-3331] design digitalRcg has unconnected port post_img_Y_mean[7]
+WARNING: [Synth 8-3331] design digitalRcg has unconnected port post_img_Y_mean[6]
+WARNING: [Synth 8-3331] design digitalRcg has unconnected port post_img_Y_mean[5]
+WARNING: [Synth 8-3331] design digitalRcg has unconnected port post_img_Y_mean[4]
+WARNING: [Synth 8-3331] design digitalRcg has unconnected port post_img_Y_mean[3]
+WARNING: [Synth 8-3331] design digitalRcg has unconnected port post_img_Y_mean[2]
+WARNING: [Synth 8-3331] design digitalRcg has unconnected port post_img_Y_mean[1]
+WARNING: [Synth 8-3331] design digitalRcg has unconnected port post_img_Y_mean[0]
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (MIPI_Camera_Driver/\Trigger_Write/buffer_out_level_reg )
+INFO: [Synth 8-3886] merging instance 'MIPI_Camera_Driver/OV5647/data_o_reg[15]' (FDC) to 'MIPI_Camera_Driver/OV5647/data_o_reg[23]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (MIPI_Camera_Driver/\OV5647/data_o_reg[23] )
+INFO: [Synth 8-3886] merging instance 'MIPI_Camera_IIC/buf_iic_read_reg' (FDC) to 'MIPI_Camera_IIC/state_current_reg[4]'
+INFO: [Synth 8-3886] merging instance 'MIPI_Camera_Driver/reg_addr_l_reg[7]' (FDCE) to 'MIPI_Camera_Driver/reg_addr_h_reg[7]'
+INFO: [Synth 8-3886] merging instance 'MIPI_Camera_Driver/reg_addr_h_reg[7]' (FDCE) to 'MIPI_Camera_Driver/slave_addr_reg[0]'
+INFO: [Synth 8-3886] merging instance 'MIPI_Camera_Driver/slave_addr_reg[7]' (FDCE) to 'MIPI_Camera_Driver/slave_addr_reg[0]'
+INFO: [Synth 8-3886] merging instance 'MIPI_Camera_Driver/slave_addr_reg[6]' (FDCE) to 'MIPI_Camera_Driver/slave_addr_reg[2]'
+INFO: [Synth 8-3886] merging instance 'MIPI_Camera_Driver/slave_addr_reg[5]' (FDCE) to 'MIPI_Camera_Driver/slave_addr_reg[2]'
+INFO: [Synth 8-3886] merging instance 'MIPI_Camera_Driver/slave_addr_reg[4]' (FDCE) to 'MIPI_Camera_Driver/slave_addr_reg[0]'
+INFO: [Synth 8-3886] merging instance 'MIPI_Camera_Driver/slave_addr_reg[3]' (FDCE) to 'MIPI_Camera_Driver/slave_addr_reg[2]'
+INFO: [Synth 8-3886] merging instance 'MIPI_Camera_Driver/slave_addr_reg[2]' (FDCE) to 'MIPI_Camera_Driver/iic_mode_reg'
+INFO: [Synth 8-3886] merging instance 'MIPI_Camera_Driver/slave_addr_reg[1]' (FDCE) to 'MIPI_Camera_Driver/slave_addr_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (MIPI_Camera_Driver/\slave_addr_reg[0] )
+INFO: [Synth 8-3886] merging instance 'MIPI_Camera_IIC/buf_slave_addr_r_reg[7]' (FDC) to 'MIPI_Camera_IIC/buf_slave_addr_w_reg[7]'
+INFO: [Synth 8-3886] merging instance 'MIPI_Camera_IIC/buf_slave_addr_r_reg[6]' (FDC) to 'MIPI_Camera_IIC/buf_slave_addr_w_reg[6]'
+INFO: [Synth 8-3886] merging instance 'MIPI_Camera_IIC/buf_slave_addr_r_reg[5]' (FDC) to 'MIPI_Camera_IIC/buf_slave_addr_w_reg[5]'
+INFO: [Synth 8-3886] merging instance 'MIPI_Camera_IIC/buf_slave_addr_r_reg[4]' (FDC) to 'MIPI_Camera_IIC/buf_slave_addr_w_reg[4]'
+INFO: [Synth 8-3886] merging instance 'MIPI_Camera_IIC/buf_slave_addr_r_reg[3]' (FDC) to 'MIPI_Camera_IIC/buf_slave_addr_w_reg[3]'
+INFO: [Synth 8-3886] merging instance 'MIPI_Camera_IIC/buf_slave_addr_r_reg[2]' (FDC) to 'MIPI_Camera_IIC/buf_slave_addr_w_reg[2]'
+INFO: [Synth 8-3886] merging instance 'MIPI_Camera_IIC/buf_slave_addr_r_reg[1]' (FDC) to 'MIPI_Camera_IIC/buf_slave_addr_w_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (MIPI_Camera_IIC/\state_current_reg[4] )
+INFO: [Synth 8-3886] merging instance 'MIPI_Camera_IIC/buf_slave_addr_w_reg[6]' (FDC) to 'MIPI_Camera_IIC/buf_slave_addr_w_reg[5]'
+INFO: [Synth 8-3886] merging instance 'MIPI_Camera_IIC/buf_slave_addr_w_reg[5]' (FDC) to 'MIPI_Camera_IIC/buf_slave_addr_w_reg[3]'
+INFO: [Synth 8-3886] merging instance 'MIPI_Camera_IIC/buf_slave_addr_w_reg[3]' (FDC) to 'MIPI_Camera_IIC/buf_slave_addr_w_reg[2]'
+INFO: [Synth 8-3886] merging instance 'MIPI_Camera_IIC/buf_slave_addr_w_reg[2]' (FDC) to 'MIPI_Camera_IIC/buf_iic_mode_reg'
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:13 ; elapsed = 00:01:34 . Memory (MB): peak = 897.020 ; gain = 528.008
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++------------+------------+---------------+----------------+
+|Module Name | RTL Object | Depth x Width | Implemented As | 
++------------+------------+---------------+----------------+
+|ROM_OV5647  | p_0_out    | 128x24        | LUT            | 
+|OV5647_Init | p_0_out    | 128x24        | LUT            | 
++------------+------------+---------------+----------------+
+
+
+DSP: Preliminary Mapping  Report (see note below)
++--------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name   | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++--------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|digitalRcg    | A*(B:0x5f)  | 17     | 7      | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|digitalRcg    | A*(B:0x2a)  | 17     | 6      | -      | -      | 23     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|identf_number | A*B         | 11     | 10     | -      | -      | 21     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|identf_number | A*B         | 11     | 10     | -      | -      | 21     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|identf_number | A*B         | 11     | 10     | -      | -      | 21     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|identf_number | A*B         | 11     | 10     | -      | -      | 21     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++--------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'clk_10/clk_out1' to pin 'clk_10/bbstub_clk_out1/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'clk_10/clk_out2' to pin 'clk_10/bbstub_clk_out2/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'MIPI_Trans_Driver/camera_clock/clk_in1' to pin 'MIPI_Trans_Driver/Data_Read/bbstub_rxbyteclkhs/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'MIPI_Trans_Driver/camera_clock/clk_out1' to pin 'MIPI_Trans_Driver/camera_clock/bbstub_clk_out1/O'
+INFO: [Synth 8-5783] Moving clock source from hierarchical pin 'MIPI_Trans_Driver/camera_clock/clk_in1' to 'MIPI_Trans_Driver/Driver_Csi_To_Dvp0/axis_tdata_i_reg[15]/C'
+INFO: [Synth 8-5819] Moved 4 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:33 ; elapsed = 00:01:55 . Memory (MB): peak = 897.020 ; gain = 528.008
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:35 ; elapsed = 00:01:57 . Memory (MB): peak = 897.020 ; gain = 528.008
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:36 ; elapsed = 00:01:58 . Memory (MB): peak = 897.020 ; gain = 528.008
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4649] Removing BlackBox instance \u_disp_data1/num0_inst  of module NUM0__1 having unconnected or no output ports
+INFO: [Synth 8-4649] Removing BlackBox instance \u_disp_data1/num1_inst  of module num1__1 having unconnected or no output ports
+INFO: [Synth 8-4649] Removing BlackBox instance \u_disp_data1/num2_inst  of module num2__1 having unconnected or no output ports
+INFO: [Synth 8-4649] Removing BlackBox instance \u_disp_data1/num3_inst  of module num3__1 having unconnected or no output ports
+INFO: [Synth 8-4649] Removing BlackBox instance \u_disp_data1/num4_inst  of module num4__1 having unconnected or no output ports
+INFO: [Synth 8-4649] Removing BlackBox instance \u_disp_data1/num5_inst  of module num5__1 having unconnected or no output ports
+INFO: [Synth 8-4649] Removing BlackBox instance \u_disp_data1/num6_inst  of module num6__1 having unconnected or no output ports
+INFO: [Synth 8-4649] Removing BlackBox instance \u_disp_data1/num7_inst  of module num7__1 having unconnected or no output ports
+INFO: [Synth 8-4649] Removing BlackBox instance \u_disp_data1/num8_inst  of module num8__1 having unconnected or no output ports
+INFO: [Synth 8-4649] Removing BlackBox instance \u_disp_data1/num9_inst  of module num9__1 having unconnected or no output ports
+INFO: [Synth 8-4649] Removing BlackBox instance \u_disp_data2/num0_inst  of module NUM0__2 having unconnected or no output ports
+INFO: [Synth 8-4649] Removing BlackBox instance \u_disp_data2/num1_inst  of module num1__2 having unconnected or no output ports
+INFO: [Synth 8-4649] Removing BlackBox instance \u_disp_data2/num2_inst  of module num2__2 having unconnected or no output ports
+INFO: [Synth 8-4649] Removing BlackBox instance \u_disp_data2/num3_inst  of module num3__2 having unconnected or no output ports
+INFO: [Synth 8-4649] Removing BlackBox instance \u_disp_data2/num4_inst  of module num4__2 having unconnected or no output ports
+INFO: [Synth 8-4649] Removing BlackBox instance \u_disp_data2/num5_inst  of module num5__2 having unconnected or no output ports
+INFO: [Synth 8-4649] Removing BlackBox instance \u_disp_data2/num6_inst  of module num6__2 having unconnected or no output ports
+INFO: [Synth 8-4649] Removing BlackBox instance \u_disp_data2/num7_inst  of module num7__2 having unconnected or no output ports
+INFO: [Synth 8-4649] Removing BlackBox instance \u_disp_data2/num8_inst  of module num8__2 having unconnected or no output ports
+INFO: [Synth 8-4649] Removing BlackBox instance \u_disp_data2/num9_inst  of module num9__2 having unconnected or no output ports
+INFO: [Synth 8-4649] Removing BlackBox instance \u_disp_data3/num0_inst  of module NUM0__3 having unconnected or no output ports
+INFO: [Synth 8-4649] Removing BlackBox instance \u_disp_data3/num1_inst  of module num1__3 having unconnected or no output ports
+INFO: [Synth 8-4649] Removing BlackBox instance \u_disp_data3/num2_inst  of module num2__3 having unconnected or no output ports
+INFO: [Synth 8-4649] Removing BlackBox instance \u_disp_data3/num3_inst  of module num3__3 having unconnected or no output ports
+INFO: [Synth 8-4649] Removing BlackBox instance \u_disp_data3/num4_inst  of module num4__3 having unconnected or no output ports
+INFO: [Synth 8-4649] Removing BlackBox instance \u_disp_data3/num5_inst  of module num5__3 having unconnected or no output ports
+INFO: [Synth 8-4649] Removing BlackBox instance \u_disp_data3/num6_inst  of module num6__3 having unconnected or no output ports
+INFO: [Synth 8-4649] Removing BlackBox instance \u_disp_data3/num7_inst  of module num7__3 having unconnected or no output ports
+INFO: [Synth 8-4649] Removing BlackBox instance \u_disp_data3/num8_inst  of module num8__3 having unconnected or no output ports
+INFO: [Synth 8-4649] Removing BlackBox instance \u_disp_data3/num9_inst  of module num9__3 having unconnected or no output ports
+INFO: [Synth 8-4649] Removing BlackBox instance \u_disp_data4/num0_inst  of module NUM0 having unconnected or no output ports
+INFO: [Synth 8-4649] Removing BlackBox instance \u_disp_data4/num1_inst  of module num1 having unconnected or no output ports
+INFO: [Synth 8-4649] Removing BlackBox instance \u_disp_data4/num2_inst  of module num2 having unconnected or no output ports
+INFO: [Synth 8-4649] Removing BlackBox instance \u_disp_data4/num3_inst  of module num3 having unconnected or no output ports
+INFO: [Synth 8-4649] Removing BlackBox instance \u_disp_data4/num4_inst  of module num4 having unconnected or no output ports
+INFO: [Synth 8-4649] Removing BlackBox instance \u_disp_data4/num5_inst  of module num5 having unconnected or no output ports
+INFO: [Synth 8-4649] Removing BlackBox instance \u_disp_data4/num6_inst  of module num6 having unconnected or no output ports
+INFO: [Synth 8-4649] Removing BlackBox instance \u_disp_data4/num7_inst  of module num7 having unconnected or no output ports
+INFO: [Synth 8-4649] Removing BlackBox instance \u_disp_data4/num8_inst  of module num8 having unconnected or no output ports
+INFO: [Synth 8-4649] Removing BlackBox instance \u_disp_data4/num9_inst  of module num9 having unconnected or no output ports
+INFO: [Synth 8-5365] Flop MIPI_Camera_IIC/sda_dir_o_reg is being inverted and renamed to MIPI_Camera_IIC/sda_dir_o_reg_inv.
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:39 ; elapsed = 00:02:01 . Memory (MB): peak = 897.020 ; gain = 528.008
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:39 ; elapsed = 00:02:01 . Memory (MB): peak = 897.020 ; gain = 528.008
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:39 ; elapsed = 00:02:01 . Memory (MB): peak = 897.020 ; gain = 528.008
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:39 ; elapsed = 00:02:01 . Memory (MB): peak = 897.020 ; gain = 528.008
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:39 ; elapsed = 00:02:01 . Memory (MB): peak = 897.020 ; gain = 528.008
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:39 ; elapsed = 00:02:01 . Memory (MB): peak = 897.020 ; gain = 528.008
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+-----------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name                                                  | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+-----------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|HDMI_Demo   | MIPI_Trans_Driver/Driver_Bayer_To_RGB0/hsync_o_reg        | 7      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|HDMI_Demo   | MIPI_Trans_Driver/Driver_Bayer_To_RGB0/vsync_o_reg        | 7      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|HDMI_Demo   | MIPI_Trans_Driver/Driver_Bayer_To_RGB0/flg_pos_vde_reg[2] | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|HDMI_Demo   | MIPI_Trans_Driver/Driver_Bayer_To_RGB0/vsync_i_reg[1]     | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|HDMI_Demo   | MIPI_Trans_Driver/Driver_Bayer_To_RGB0/line2_reg[0][7]    | 3      | 8     | NO           | NO                 | YES               | 8      | 0       | 
++------------+-----------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+----------------+----------+
+|      |BlackBox name   |Instances |
++------+----------------+----------+
+|1     |clk_wiz_0       |         1|
+|2     |rgb2dvi_0       |         1|
+|3     |Edge_Check_0    |         1|
+|4     |RGB_To_Gray_0   |         1|
+|5     |clk_wiz_1       |         1|
+|6     |csi2_d_phy_rx_0 |         1|
+|7     |csi_to_axis_0   |         1|
+|8     |RAM_Line        |         3|
+|9     |AXIS_Data_RAM   |         1|
++------+----------------+----------+
+
+Report Cell Usage: 
++------+----------------+------+
+|      |Cell            |Count |
++------+----------------+------+
+|1     |AXIS_Data_RAM   |     1|
+|2     |Edge_Check_0    |     1|
+|3     |RAM_Line        |     1|
+|4     |RAM_Line__3     |     1|
+|5     |RAM_Line__4     |     1|
+|6     |RGB_To_Gray_0   |     1|
+|7     |clk_wiz_0       |     1|
+|8     |clk_wiz_1       |     1|
+|9     |csi2_d_phy_rx_0 |     1|
+|10    |csi_to_axis_0   |     1|
+|11    |rgb2dvi_0       |     1|
+|12    |CARRY4          |    24|
+|13    |LUT1            |     8|
+|14    |LUT2            |    79|
+|15    |LUT3            |    60|
+|16    |LUT4            |    39|
+|17    |LUT5            |    67|
+|18    |LUT6            |   136|
+|19    |MUXF7           |    24|
+|20    |SRL16E          |    12|
+|21    |FDCE            |   149|
+|22    |FDPE            |     1|
+|23    |FDRE            |   312|
+|24    |IBUF            |     3|
+|25    |IOBUF           |     1|
+|26    |OBUF            |     2|
++------+----------------+------+
+
+Report Instance Areas: 
++------+-------------------------+--------------------+------+
+|      |Instance                 |Module              |Cells |
++------+-------------------------+--------------------+------+
+|1     |top                      |                    |  1074|
+|2     |  Image_Process_Edge     |Image_Process       |    68|
+|3     |    Delay_De             |Delay_Signal        |    11|
+|4     |    Delay_HSync          |Delay_Signal_0      |    11|
+|5     |    Delay_VSync          |Delay_Signal_1      |    11|
+|6     |  MIPI_Camera_Driver     |OV5647_Init         |   213|
+|7     |    OV5647               |ROM_OV5647          |    71|
+|8     |    Trigger_Write        |Trigger_Generator   |    18|
+|9     |  MIPI_Camera_IIC        |Driver_IIC          |   132|
+|10    |  MIPI_Trans_Driver      |Driver_MIPI         |   645|
+|11    |    Driver_Bayer_To_RGB0 |Driver_Bayer_To_RGB |   394|
+|12    |    Driver_Csi_To_Dvp0   |Driver_Csi_To_Dvp   |   179|
++------+-------------------------+--------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:39 ; elapsed = 00:02:01 . Memory (MB): peak = 897.020 ; gain = 528.008
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 14 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:19 ; elapsed = 00:01:45 . Memory (MB): peak = 897.020 ; gain = 222.188
+Synthesis Optimization Complete : Time (s): cpu = 00:01:39 ; elapsed = 00:02:01 . Memory (MB): peak = 897.020 ; gain = 528.008
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 49 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 897.020 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 1 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+298 Infos, 71 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:43 ; elapsed = 00:02:06 . Memory (MB): peak = 897.020 ; gain = 540.320
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 897.020 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/HDMI_Demo/HDMI_Demo.runs/synth_1/HDMI_Demo.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file HDMI_Demo_utilization_synth.rpt -pb HDMI_Demo_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Aug  1 12:16:15 2020...

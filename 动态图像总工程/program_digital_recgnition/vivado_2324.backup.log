@@ -1,0 +1,26 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Thu Jul 30 19:18:03 2020
+# Process ID: 2324
+# Current directory: C:/Users/mac/Desktop/Mini-HDMI-Interface/HDMI_Demo
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6864 C:\Users\mac\Desktop\Mini-HDMI-Interface\HDMI_Demo\HDMI_Demo.xpr
+# Log file: C:/Users/mac/Desktop/Mini-HDMI-Interface/HDMI_Demo/vivado.log
+# Journal file: C:/Users/mac/Desktop/Mini-HDMI-Interface/HDMI_Demo\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/mac/Desktop/Mini-HDMI-Interface/HDMI_Demo/HDMI_Demo.xpr
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-3] IP Repository Path: Could not find the directory 'C:/Users/mac/IP_Core/HDMI-IP/IP/RGB2DVI_IP'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'c:/Users/mac/IP_Core/HDMI-IP/IP/RGB2DVI_IP'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/SEA-master/Examples/FPGA-IP/Mini-HDMI-IP'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/SEA-master/Examples/FPGA-IP/Image-Process-IP'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/XILINX/vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:38 ; elapsed = 00:00:24 . Memory (MB): peak = 793.465 ; gain = 193.047
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Jul 30 19:19:20 2020...
