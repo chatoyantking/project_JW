@@ -1,0 +1,41 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Thu Jul 30 20:01:41 2020
+# Process ID: 128
+# Current directory: D:/HDMI_Demo
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16116 D:\HDMI_Demo\HDMI_Demo.xpr
+# Log file: D:/HDMI_Demo/vivado.log
+# Journal file: D:/HDMI_Demo\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/HDMI_Demo/HDMI_Demo.xpr
+update_compile_order -fileset sources_1
+set_property -dict [list CONFIG.Coe_File {D:/0_Picture_R_Rom.coe}] [get_ips Picture_R_Rom]
+set_property -dict [list CONFIG.Coe_File {D:/0_Picture_G_Rom.coe}] [get_ips Picture_G_Rom]
+set_property -dict [list CONFIG.Coe_File {D:/0_Picture_B_Rom.coe}] [get_ips Picture_B_Rom]
+reset_run Picture_R_Rom_synth_1
+reset_run Picture_G_Rom_synth_1
+reset_run Picture_B_Rom_synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+close [ open D:/HDMI_Demo/HDMI_Demo.srcs/sources_1/new/digitalRcg.v w ]
+add_files D:/HDMI_Demo/HDMI_Demo.srcs/sources_1/new/digitalRcg.v
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+update_compile_order -fileset sources_1

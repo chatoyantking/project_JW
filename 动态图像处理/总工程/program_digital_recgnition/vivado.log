@@ -1,0 +1,215 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Jul 31 20:40:45 2020
+# Process ID: 13160
+# Current directory: D:/HDMI_Demo
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12276 D:\HDMI_Demo\HDMI_Demo.xpr
+# Log file: D:/HDMI_Demo/vivado.log
+# Journal file: D:/HDMI_Demo\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/HDMI_Demo/HDMI_Demo.xpr
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-3] IP Repository Path: Could not find the directory 'D:/HDMI_Demo/IP_Core/HDMI-IP/IP/RGB2DVI_IP'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'd:/HDMI_Demo/IP_Core/HDMI-IP/IP/RGB2DVI_IP'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/SEA-master/Examples/FPGA-IP/Mini-HDMI-IP'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/SEA-master/Examples/FPGA-IP/Image-Process-IP'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/IP_Core'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/vivado2018.3/Vivado/2018.3/data/ip'.
+CRITICAL WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:ip:rgb2dvi:1.2'. The one found in IP location 'd:/SEA-master/Examples/FPGA-IP/Mini-HDMI-IP/IP/RGB2DVI_IP' will take precedence over the same IP in location d:/IP_Core/RGB2DVI_IP
+open_project: Time (s): cpu = 00:00:26 ; elapsed = 00:00:11 . Memory (MB): peak = 833.902 ; gain = 204.773
+update_compile_order -fileset sources_1
+INFO: [Device 21-403] Loading part xc7s15ftgb196-1
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+set_property -dict [list CONFIG.Write_Width_B {16} CONFIG.Read_Width_B {16}] [get_ips AXIS_Data_RAM]
+reset_run synth_1
+reset_run AXIS_Data_RAM_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/Edge_Check_0/Edge_Check_0.xci' is already up-to-date
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'AXIS_Data_RAM'...
+[Fri Jul 31 20:42:23 2020] Launched AXIS_Data_RAM_synth_1, synth_1...
+Run output will be captured here:
+AXIS_Data_RAM_synth_1: D:/HDMI_Demo/HDMI_Demo.runs/AXIS_Data_RAM_synth_1/runme.log
+synth_1: D:/HDMI_Demo/HDMI_Demo.runs/synth_1/runme.log
+[Fri Jul 31 20:42:23 2020] Launched impl_1...
+Run output will be captured here: D:/HDMI_Demo/HDMI_Demo.runs/impl_1/runme.log
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+set_property -dict [list CONFIG.Write_Width_B {8} CONFIG.Read_Width_B {8}] [get_ips AXIS_Data_RAM]
+reset_run synth_1
+reset_run AXIS_Data_RAM_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/Edge_Check_0/Edge_Check_0.xci' is already up-to-date
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'AXIS_Data_RAM'...
+[Fri Jul 31 20:51:53 2020] Launched AXIS_Data_RAM_synth_1, synth_1...
+Run output will be captured here:
+AXIS_Data_RAM_synth_1: D:/HDMI_Demo/HDMI_Demo.runs/AXIS_Data_RAM_synth_1/runme.log
+synth_1: D:/HDMI_Demo/HDMI_Demo.runs/synth_1/runme.log
+[Fri Jul 31 20:51:53 2020] Launched impl_1...
+Run output will be captured here: D:/HDMI_Demo/HDMI_Demo.runs/impl_1/runme.log
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+set_property -dict [list CONFIG.Write_Depth_A {10000}] [get_ips RAM_Line]
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+reset_run synth_1
+reset_run RAM_Line_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/Edge_Check_0/Edge_Check_0.xci' is already up-to-date
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'RAM_Line'...
+[Fri Jul 31 21:02:27 2020] Launched RAM_Line_synth_1, synth_1...
+Run output will be captured here:
+RAM_Line_synth_1: D:/HDMI_Demo/HDMI_Demo.runs/RAM_Line_synth_1/runme.log
+synth_1: D:/HDMI_Demo/HDMI_Demo.runs/synth_1/runme.log
+[Fri Jul 31 21:02:27 2020] Launched impl_1...
+Run output will be captured here: D:/HDMI_Demo/HDMI_Demo.runs/impl_1/runme.log
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+set_property -dict [list CONFIG.Write_Width_B {16} CONFIG.Read_Width_B {16}] [get_ips AXIS_Data_RAM]
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+set_property -dict [list CONFIG.Write_Width_A {8} CONFIG.Write_Depth_A {10000} CONFIG.Read_Width_A {8} CONFIG.Operating_Mode_A {WRITE_FIRST} CONFIG.Write_Width_B {8} CONFIG.Read_Width_B {8} CONFIG.Enable_B {Always_Enabled}] [get_ips AXIS_Data_RAM]
+reset_run synth_1
+reset_run AXIS_Data_RAM_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/Edge_Check_0/Edge_Check_0.xci' is already up-to-date
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'AXIS_Data_RAM'...
+[Fri Jul 31 21:11:11 2020] Launched AXIS_Data_RAM_synth_1, synth_1...
+Run output will be captured here:
+AXIS_Data_RAM_synth_1: D:/HDMI_Demo/HDMI_Demo.runs/AXIS_Data_RAM_synth_1/runme.log
+synth_1: D:/HDMI_Demo/HDMI_Demo.runs/synth_1/runme.log
+[Fri Jul 31 21:11:12 2020] Launched impl_1...
+Run output will be captured here: D:/HDMI_Demo/HDMI_Demo.runs/impl_1/runme.log
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+set_property -dict [list CONFIG.Write_Depth_A {640}] [get_ips AXIS_Data_RAM]
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+set_property -dict [list CONFIG.Write_Depth_A {640}] [get_ips RAM_Line]
+reset_run synth_1
+reset_run RAM_Line_synth_1
+reset_run AXIS_Data_RAM_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/Edge_Check_0/Edge_Check_0.xci' is already up-to-date
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'RAM_Line'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'AXIS_Data_RAM'...
+[Fri Jul 31 21:17:59 2020] Launched RAM_Line_synth_1, AXIS_Data_RAM_synth_1, synth_1...
+Run output will be captured here:
+RAM_Line_synth_1: D:/HDMI_Demo/HDMI_Demo.runs/RAM_Line_synth_1/runme.log
+AXIS_Data_RAM_synth_1: D:/HDMI_Demo/HDMI_Demo.runs/AXIS_Data_RAM_synth_1/runme.log
+synth_1: D:/HDMI_Demo/HDMI_Demo.runs/synth_1/runme.log
+[Fri Jul 31 21:17:59 2020] Launched impl_1...
+Run output will be captured here: D:/HDMI_Demo/HDMI_Demo.runs/impl_1/runme.log
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+set_property -dict [list CONFIG.Write_Depth_A {1280}] [get_ips RAM_Line]
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+set_property -dict [list CONFIG.Write_Width_A {16} CONFIG.Write_Depth_A {800} CONFIG.Read_Width_A {16} CONFIG.Operating_Mode_A {READ_FIRST} CONFIG.Write_Width_B {16} CONFIG.Read_Width_B {16} CONFIG.Enable_B {Always_Enabled}] [get_ips AXIS_Data_RAM]
+reset_run synth_1
+reset_run RAM_Line_synth_1
+reset_run AXIS_Data_RAM_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/Edge_Check_0/Edge_Check_0.xci' is already up-to-date
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'RAM_Line'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'AXIS_Data_RAM'...
+[Fri Jul 31 21:24:42 2020] Launched RAM_Line_synth_1, AXIS_Data_RAM_synth_1, synth_1...
+Run output will be captured here:
+RAM_Line_synth_1: D:/HDMI_Demo/HDMI_Demo.runs/RAM_Line_synth_1/runme.log
+AXIS_Data_RAM_synth_1: D:/HDMI_Demo/HDMI_Demo.runs/AXIS_Data_RAM_synth_1/runme.log
+synth_1: D:/HDMI_Demo/HDMI_Demo.runs/synth_1/runme.log
+[Fri Jul 31 21:24:42 2020] Launched impl_1...
+Run output will be captured here: D:/HDMI_Demo/HDMI_Demo.runs/impl_1/runme.log
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 137 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'MIPI_Trans_Driver/camera_clock/clk_in1' is not directly connected to top level port. Synthesis is ignored for IBUF_LOW_PWR but preserved for implementation.
+INFO: [Constraints 18-4398] Generator version for shapeDB does not match. shapeDB will be regenerated.
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.322 . Memory (MB): peak = 1685.922 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.322 . Memory (MB): peak = 1685.922 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1685.922 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 1 instances
+
+open_run: Time (s): cpu = 00:00:27 ; elapsed = 00:00:23 . Memory (MB): peak = 1787.656 ; gain = 216.410
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+set_property -dict [list CONFIG.Write_Width_A {16} CONFIG.Read_Width_A {16} CONFIG.Operating_Mode_A {WRITE_FIRST} CONFIG.Write_Width_B {8} CONFIG.Read_Width_B {8} CONFIG.Enable_B {Use_ENB_Pin}] [get_ips AXIS_Data_RAM]
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+reset_run synth_1
+reset_run AXIS_Data_RAM_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/Edge_Check_0/Edge_Check_0.xci' is already up-to-date
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'AXIS_Data_RAM'...
+[Fri Jul 31 21:33:18 2020] Launched AXIS_Data_RAM_synth_1, synth_1...
+Run output will be captured here:
+AXIS_Data_RAM_synth_1: D:/HDMI_Demo/HDMI_Demo.runs/AXIS_Data_RAM_synth_1/runme.log
+synth_1: D:/HDMI_Demo/HDMI_Demo.runs/synth_1/runme.log
+[Fri Jul 31 21:33:18 2020] Launched impl_1...
+Run output will be captured here: D:/HDMI_Demo/HDMI_Demo.runs/impl_1/runme.log
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+set_property -dict [list CONFIG.Write_Width_B {16} CONFIG.Read_Width_B {16} CONFIG.Enable_B {Always_Enabled}] [get_ips AXIS_Data_RAM]
+reset_run synth_1
+reset_run AXIS_Data_RAM_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/Edge_Check_0/Edge_Check_0.xci' is already up-to-date
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'AXIS_Data_RAM'...
+[Fri Jul 31 21:44:56 2020] Launched AXIS_Data_RAM_synth_1, synth_1...
+Run output will be captured here:
+AXIS_Data_RAM_synth_1: D:/HDMI_Demo/HDMI_Demo.runs/AXIS_Data_RAM_synth_1/runme.log
+synth_1: D:/HDMI_Demo/HDMI_Demo.runs/synth_1/runme.log
+[Fri Jul 31 21:44:56 2020] Launched impl_1...
+Run output will be captured here: D:/HDMI_Demo/HDMI_Demo.runs/impl_1/runme.log
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Jul 31 22:04:33 2020...
