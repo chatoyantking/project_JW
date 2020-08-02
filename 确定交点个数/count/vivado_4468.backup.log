@@ -1,0 +1,26 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sat Aug  1 13:45:37 2020
+# Process ID: 4468
+# Current directory: C:/Users/mac/Desktop/拟提交文件/序列上升沿检测并输出上升沿的个数/count
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3188 C:\Users\mac\Desktop\拟提交文件\序列上升沿检测并输出上升沿的个数\count\count.xpr
+# Log file: C:/Users/mac/Desktop/拟提交文件/序列上升沿检测并输出上升沿的个数/count/vivado.log
+# Journal file: C:/Users/mac/Desktop/拟提交文件/序列上升沿检测并输出上升沿的个数/count\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/mac/Desktop/拟提交文件/序列上升沿检测并输出上升沿的个数/count/count.xpr
+INFO: [Project 1-313] Project file moved from 'D:/Xilinx_summer/count' since last save.
+WARNING: [Project 1-312] File not found as 'C:/Users/mac/Desktop/拟提交文件/SEA-master/Examples/FPGA-IP/Get_X-IP/component.xml'; using path 'D:/SEA-master/Examples/FPGA-IP/Get_X-IP/component.xml' instead.
+Scanning sources...
+Finished scanning sources
+WARNING: [Project 1-312] File not found as 'C:/Users/mac/Desktop/拟提交文件/SEA-master/Examples/FPGA-IP/Get_X-IP/component.xml'; using path 'D:/SEA-master/Examples/FPGA-IP/Get_X-IP/component.xml' instead.
+INFO: [filemgmt 56-1] IP Repository Path: Directory not found as 'C:/Users/mac/Desktop/拟提交文件/SEA-master/Examples/FPGA-IP/Get_X-IP'; using path 'D:/SEA-master/Examples/FPGA-IP/Get_X-IP' instead.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/SEA-master/Examples/FPGA-IP/Get_X-IP'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/XILINX/vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:29 ; elapsed = 00:00:17 . Memory (MB): peak = 757.465 ; gain = 152.801
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Aug  1 13:46:52 2020...

@@ -1,0 +1,30 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sat Aug  1 15:07:55 2020
+# Process ID: 5532
+# Current directory: C:/Users/mac/Desktop/拟提交文件/序列上升沿检测并输出上升沿的个数/count/count.runs/synth_1
+# Command line: vivado.exe -log counter10.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source counter10.tcl
+# Log file: C:/Users/mac/Desktop/拟提交文件/序列上升沿检测并输出上升沿的个数/count/count.runs/synth_1/counter10.vds
+# Journal file: C:/Users/mac/Desktop/拟提交文件/序列上升沿检测并输出上升沿的个数/count/count.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source counter10.tcl -notrace
+create_project: Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 325.121 ; gain = 73.590
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/SEA-master/Examples/FPGA-IP/Get_X-IP'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/XILINX/vivado/2018.3/data/ip'.
+update_ip_catalog: Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 357.285 ; gain = 32.164
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is c:/Users/mac/Desktop/拟提交文件/序列上升沿检测并输出上升沿的个数/count/count.cache/ip 
+Command: synth_design -top counter10 -part xc7s15ftgb196-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7s15'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7s15'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 11888 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 471.875 ; gain = 101.699
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'counter10' [C:/Users/mac/Desktop/拟提交文件/序列上升沿检测并输出上升沿的个数/count/count.srcs/sources_1/new/count.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'counter10' (1#1) [C:/Users/mac/Desktop/拟提交文件/序列上升沿检测并输出上升沿的个数/count/count.srcs/sources_1/new/count.v:22]

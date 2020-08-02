@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Xilinx_summer/project_8/project_8.srcs/sources_1/new/Get_X.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module counter10
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Xilinx_summer/project_8/project_8.srcs/sim_1/new/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module counter10_tb
