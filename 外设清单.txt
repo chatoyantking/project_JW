@@ -1,0 +1,1 @@
+清单：sea-s7开发板、mipi摄像头ov5647、显示屏、TF卡及读取器、miniHDMI转VGA连接线
