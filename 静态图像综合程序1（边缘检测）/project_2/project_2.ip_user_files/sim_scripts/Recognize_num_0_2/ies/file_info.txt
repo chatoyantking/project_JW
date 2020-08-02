@@ -1,0 +1,11 @@
+xpm_cdc.sv,systemverilog,xil_defaultlib,D:/XILINX/vivado/2018.3/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv,
+xpm_memory.sv,systemverilog,xil_defaultlib,D:/XILINX/vivado/2018.3/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv,
+xpm_VCOMP.vhd,vhdl,xpm,D:/XILINX/vivado/2018.3/data/ip/xpm/xpm_VCOMP.vhd,
+Get_X.v,verilog,xil_defaultlib,../../../../project_2.srcs/sources_1/ip/Recognize_num_0_2/src/Get_X.v,
+counter10.v,verilog,xil_defaultlib,../../../../project_2.srcs/sources_1/ip/Recognize_num_0_2/src/counter10.v,
+judge.v,verilog,xil_defaultlib,../../../../project_2.srcs/sources_1/ip/Recognize_num_0_2/src/judge.v,
+num_judge.v,verilog,xil_defaultlib,../../../../project_2.srcs/sources_1/ip/Recognize_num_0_2/src/num_judge.v,
+point.v,verilog,xil_defaultlib,../../../../project_2.srcs/sources_1/ip/Recognize_num_0_2/src/point.v,
+Recognize_Top.v,verilog,xil_defaultlib,../../../../project_2.srcs/sources_1/ip/Recognize_num_0_2/src/Recognize_Top.v,
+Recognize_num_0.v,verilog,xil_defaultlib,../../../../project_2.srcs/sources_1/ip/Recognize_num_0_2/sim/Recognize_num_0.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

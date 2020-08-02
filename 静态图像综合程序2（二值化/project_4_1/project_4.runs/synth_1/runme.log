@@ -1,0 +1,585 @@
+
+*** Running vivado
+    with args -log project_4.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source project_4.tcl
+
+
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source project_4.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/SEA-master/SEA-master/Examples/FPGA-IP/Mini-HDMI-IP'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/SEA-master/Examples/FPGA-IP/Image-Process-IP'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/SEA-master/Examples/FPGA-IP/Num2-IP'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/XILINX/vivado/2018.3/data/ip'.
+update_ip_catalog: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 358.129 ; gain = 32.723
+Command: synth_design -top project_4 -part xc7s15ftgb196-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7s15'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7s15'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 17736 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 479.738 ; gain = 104.672
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'project_4' [C:/Users/mac/Desktop/project_4_1/project_4.srcs/sources_1/new/project_4.v:23]
+	Parameter RGB2Gray_Accuracy_N bound to: 8 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [C:/Users/mac/Desktop/project_4_1/project_4.runs/synth_1/.Xil/Vivado-12172-DESKTOP-QPN994V/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (1#1) [C:/Users/mac/Desktop/project_4_1/project_4.runs/synth_1/.Xil/Vivado-12172-DESKTOP-QPN994V/realtime/clk_wiz_0_stub.v:5]
+WARNING: [Synth 8-350] instance 'clk_10' of module 'clk_wiz_0' requires 4 connections, but only 2 given [C:/Users/mac/Desktop/project_4_1/project_4.srcs/sources_1/new/project_4.v:49]
+INFO: [Synth 8-6157] synthesizing module 'rgb2dvi_0' [C:/Users/mac/Desktop/project_4_1/project_4.runs/synth_1/.Xil/Vivado-12172-DESKTOP-QPN994V/realtime/rgb2dvi_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'rgb2dvi_0' (2#1) [C:/Users/mac/Desktop/project_4_1/project_4.runs/synth_1/.Xil/Vivado-12172-DESKTOP-QPN994V/realtime/rgb2dvi_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'Driver_HDMI' [C:/Users/mac/Desktop/project_4_1/project_4.srcs/sources_1/new/Driver_HDMI.v:26]
+	Parameter H_ACTIVE_1280_720 bound to: 16'b0000010100000000 
+	Parameter H_FP_1280_720 bound to: 16'b0000000001101110 
+	Parameter H_SYNC_1280_720 bound to: 16'b0000000000101000 
+	Parameter H_BP_1280_720 bound to: 16'b0000000011011100 
+	Parameter V_ACTIVE_1280_720 bound to: 16'b0000001011010000 
+	Parameter V_FP_1280_720 bound to: 16'b0000000000000101 
+	Parameter V_SYNC_1280_720 bound to: 16'b0000000000000101 
+	Parameter V_BP_1280_720 bound to: 16'b0000000000010100 
+	Parameter H_TOTAL_1280_720 bound to: 16'b0000011001110010 
+	Parameter V_TOTAL_1280_720 bound to: 16'b0000001011101110 
+	Parameter H_ACTIVE_1920_1080 bound to: 16'b0000011110000000 
+	Parameter H_FP_1920_1080 bound to: 16'b0000000001011000 
+	Parameter H_SYNC_1920_1080 bound to: 16'b0000000000101100 
+	Parameter H_BP_1920_1080 bound to: 16'b0000000010010100 
+	Parameter V_ACTIVE_1920_1080 bound to: 16'b0000010000111000 
+	Parameter V_FP_1920_1080 bound to: 16'b0000000000000100 
+	Parameter V_SYNC_1920_1080 bound to: 16'b0000000000000101 
+	Parameter V_BP_1920_1080 bound to: 16'b0000000000100100 
+	Parameter H_TOTAL_1920_1080 bound to: 16'b0000100010011000 
+	Parameter V_TOTAL_1920_1080 bound to: 16'b0000010001100101 
+INFO: [Synth 8-6155] done synthesizing module 'Driver_HDMI' (3#1) [C:/Users/mac/Desktop/project_4_1/project_4.srcs/sources_1/new/Driver_HDMI.v:26]
+INFO: [Synth 8-6157] synthesizing module 'Video_Generator' [C:/Users/mac/Desktop/project_4_1/project_4.srcs/sources_1/new/Video_Generator.v:23]
+	Parameter RGB2Gray_Accuracy_N bound to: 8 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'Picture_R_Rom' [C:/Users/mac/Desktop/project_4_1/project_4.runs/synth_1/.Xil/Vivado-12172-DESKTOP-QPN994V/realtime/Picture_R_Rom_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Picture_R_Rom' (4#1) [C:/Users/mac/Desktop/project_4_1/project_4.runs/synth_1/.Xil/Vivado-12172-DESKTOP-QPN994V/realtime/Picture_R_Rom_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'Picture_G_Rom' [C:/Users/mac/Desktop/project_4_1/project_4.runs/synth_1/.Xil/Vivado-12172-DESKTOP-QPN994V/realtime/Picture_G_Rom_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Picture_G_Rom' (5#1) [C:/Users/mac/Desktop/project_4_1/project_4.runs/synth_1/.Xil/Vivado-12172-DESKTOP-QPN994V/realtime/Picture_G_Rom_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'Picture_B_Rom' [C:/Users/mac/Desktop/project_4_1/project_4.runs/synth_1/.Xil/Vivado-12172-DESKTOP-QPN994V/realtime/Picture_B_Rom_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Picture_B_Rom' (6#1) [C:/Users/mac/Desktop/project_4_1/project_4.runs/synth_1/.Xil/Vivado-12172-DESKTOP-QPN994V/realtime/Picture_B_Rom_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'RGB_To_Gray_0' [C:/Users/mac/Desktop/project_4_1/project_4.runs/synth_1/.Xil/Vivado-12172-DESKTOP-QPN994V/realtime/RGB_To_Gray_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'RGB_To_Gray_0' (7#1) [C:/Users/mac/Desktop/project_4_1/project_4.runs/synth_1/.Xil/Vivado-12172-DESKTOP-QPN994V/realtime/RGB_To_Gray_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Video_Generator' (8#1) [C:/Users/mac/Desktop/project_4_1/project_4.srcs/sources_1/new/Video_Generator.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Two_Judge' [C:/Users/mac/Desktop/project_4_1/project_4.srcs/sources_1/new/Two_Judge.v:23]
+	Parameter YUZHI bound to: 70 - type: integer 
+	Parameter HANG1 bound to: 35 - type: integer 
+	Parameter HANG2 bound to: 67 - type: integer 
+	Parameter LIE1 bound to: 52 - type: integer 
+	Parameter HANG3 bound to: 200 - type: integer 
+	Parameter HANG4 bound to: 400 - type: integer 
+WARNING: [Synth 8-3848] Net data8_out in module/entity Two_Judge does not have driver. [C:/Users/mac/Desktop/project_4_1/project_4.srcs/sources_1/new/Two_Judge.v:35]
+INFO: [Synth 8-6155] done synthesizing module 'Two_Judge' (9#1) [C:/Users/mac/Desktop/project_4_1/project_4.srcs/sources_1/new/Two_Judge.v:23]
+INFO: [Synth 8-6157] synthesizing module 'number_judge' [C:/Users/mac/Desktop/project_4_1/project_4.srcs/sources_1/new/number_judge.v:23]
+	Parameter HANG1 bound to: 35 - type: integer 
+	Parameter HANG2 bound to: 67 - type: integer 
+	Parameter LIE1 bound to: 52 - type: integer 
+	Parameter HANG3 bound to: 200 - type: integer 
+	Parameter HANG4 bound to: 400 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'counterhang' [C:/Users/mac/Desktop/project_4_1/project_4.srcs/sources_1/new/counter10.v:23]
+WARNING: [Synth 8-6014] Unused sequential element x_num_reg was removed.  [C:/Users/mac/Desktop/project_4_1/project_4.srcs/sources_1/new/counter10.v:50]
+WARNING: [Synth 8-6014] Unused sequential element y_num_reg was removed.  [C:/Users/mac/Desktop/project_4_1/project_4.srcs/sources_1/new/counter10.v:51]
+INFO: [Synth 8-6155] done synthesizing module 'counterhang' (10#1) [C:/Users/mac/Desktop/project_4_1/project_4.srcs/sources_1/new/counter10.v:23]
+WARNING: [Synth 8-689] width (11) of port connection 'count_1' does not match port width (12) of module 'counterhang' [C:/Users/mac/Desktop/project_4_1/project_4.srcs/sources_1/new/number_judge.v:100]
+WARNING: [Synth 8-689] width (11) of port connection 'count_1' does not match port width (12) of module 'counterhang' [C:/Users/mac/Desktop/project_4_1/project_4.srcs/sources_1/new/number_judge.v:111]
+INFO: [Synth 8-6157] synthesizing module 'counterlie' [C:/Users/mac/Desktop/project_4_1/project_4.srcs/sources_1/new/counterlie.v:23]
+WARNING: [Synth 8-6014] Unused sequential element x_num_reg was removed.  [C:/Users/mac/Desktop/project_4_1/project_4.srcs/sources_1/new/counterlie.v:50]
+WARNING: [Synth 8-6014] Unused sequential element y_num_reg was removed.  [C:/Users/mac/Desktop/project_4_1/project_4.srcs/sources_1/new/counterlie.v:51]
+INFO: [Synth 8-6155] done synthesizing module 'counterlie' (11#1) [C:/Users/mac/Desktop/project_4_1/project_4.srcs/sources_1/new/counterlie.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'number_judge' (12#1) [C:/Users/mac/Desktop/project_4_1/project_4.srcs/sources_1/new/number_judge.v:23]
+WARNING: [Synth 8-3848] Net RGB_In in module/entity project_4 does not have driver. [C:/Users/mac/Desktop/project_4_1/project_4.srcs/sources_1/new/project_4.v:33]
+INFO: [Synth 8-6155] done synthesizing module 'project_4' (13#1) [C:/Users/mac/Desktop/project_4_1/project_4.srcs/sources_1/new/project_4.v:23]
+WARNING: [Synth 8-3331] design Two_Judge has unconnected port data8_out[7]
+WARNING: [Synth 8-3331] design Two_Judge has unconnected port data8_out[6]
+WARNING: [Synth 8-3331] design Two_Judge has unconnected port data8_out[5]
+WARNING: [Synth 8-3331] design Two_Judge has unconnected port data8_out[4]
+WARNING: [Synth 8-3331] design Two_Judge has unconnected port data8_out[3]
+WARNING: [Synth 8-3331] design Two_Judge has unconnected port data8_out[2]
+WARNING: [Synth 8-3331] design Two_Judge has unconnected port data8_out[1]
+WARNING: [Synth 8-3331] design Two_Judge has unconnected port data8_out[0]
+WARNING: [Synth 8-3331] design Video_Generator has unconnected port RGB_VDE
+WARNING: [Synth 8-3331] design project_4 has unconnected port Key[1]
+WARNING: [Synth 8-3331] design project_4 has unconnected port Key[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 535.418 ; gain = 160.352
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin Driver_HDMI0:RGB_In[23] to constant 0 [C:/Users/mac/Desktop/project_4_1/project_4.srcs/sources_1/new/project_4.v:63]
+WARNING: [Synth 8-3295] tying undriven pin Driver_HDMI0:RGB_In[22] to constant 0 [C:/Users/mac/Desktop/project_4_1/project_4.srcs/sources_1/new/project_4.v:63]
+WARNING: [Synth 8-3295] tying undriven pin Driver_HDMI0:RGB_In[21] to constant 0 [C:/Users/mac/Desktop/project_4_1/project_4.srcs/sources_1/new/project_4.v:63]
+WARNING: [Synth 8-3295] tying undriven pin Driver_HDMI0:RGB_In[20] to constant 0 [C:/Users/mac/Desktop/project_4_1/project_4.srcs/sources_1/new/project_4.v:63]
+WARNING: [Synth 8-3295] tying undriven pin Driver_HDMI0:RGB_In[19] to constant 0 [C:/Users/mac/Desktop/project_4_1/project_4.srcs/sources_1/new/project_4.v:63]
+WARNING: [Synth 8-3295] tying undriven pin Driver_HDMI0:RGB_In[18] to constant 0 [C:/Users/mac/Desktop/project_4_1/project_4.srcs/sources_1/new/project_4.v:63]
+WARNING: [Synth 8-3295] tying undriven pin Driver_HDMI0:RGB_In[17] to constant 0 [C:/Users/mac/Desktop/project_4_1/project_4.srcs/sources_1/new/project_4.v:63]
+WARNING: [Synth 8-3295] tying undriven pin Driver_HDMI0:RGB_In[16] to constant 0 [C:/Users/mac/Desktop/project_4_1/project_4.srcs/sources_1/new/project_4.v:63]
+WARNING: [Synth 8-3295] tying undriven pin Driver_HDMI0:RGB_In[15] to constant 0 [C:/Users/mac/Desktop/project_4_1/project_4.srcs/sources_1/new/project_4.v:63]
+WARNING: [Synth 8-3295] tying undriven pin Driver_HDMI0:RGB_In[14] to constant 0 [C:/Users/mac/Desktop/project_4_1/project_4.srcs/sources_1/new/project_4.v:63]
+WARNING: [Synth 8-3295] tying undriven pin Driver_HDMI0:RGB_In[13] to constant 0 [C:/Users/mac/Desktop/project_4_1/project_4.srcs/sources_1/new/project_4.v:63]
+WARNING: [Synth 8-3295] tying undriven pin Driver_HDMI0:RGB_In[12] to constant 0 [C:/Users/mac/Desktop/project_4_1/project_4.srcs/sources_1/new/project_4.v:63]
+WARNING: [Synth 8-3295] tying undriven pin Driver_HDMI0:RGB_In[11] to constant 0 [C:/Users/mac/Desktop/project_4_1/project_4.srcs/sources_1/new/project_4.v:63]
+WARNING: [Synth 8-3295] tying undriven pin Driver_HDMI0:RGB_In[10] to constant 0 [C:/Users/mac/Desktop/project_4_1/project_4.srcs/sources_1/new/project_4.v:63]
+WARNING: [Synth 8-3295] tying undriven pin Driver_HDMI0:RGB_In[9] to constant 0 [C:/Users/mac/Desktop/project_4_1/project_4.srcs/sources_1/new/project_4.v:63]
+WARNING: [Synth 8-3295] tying undriven pin Driver_HDMI0:RGB_In[8] to constant 0 [C:/Users/mac/Desktop/project_4_1/project_4.srcs/sources_1/new/project_4.v:63]
+WARNING: [Synth 8-3295] tying undriven pin Driver_HDMI0:RGB_In[7] to constant 0 [C:/Users/mac/Desktop/project_4_1/project_4.srcs/sources_1/new/project_4.v:63]
+WARNING: [Synth 8-3295] tying undriven pin Driver_HDMI0:RGB_In[6] to constant 0 [C:/Users/mac/Desktop/project_4_1/project_4.srcs/sources_1/new/project_4.v:63]
+WARNING: [Synth 8-3295] tying undriven pin Driver_HDMI0:RGB_In[5] to constant 0 [C:/Users/mac/Desktop/project_4_1/project_4.srcs/sources_1/new/project_4.v:63]
+WARNING: [Synth 8-3295] tying undriven pin Driver_HDMI0:RGB_In[4] to constant 0 [C:/Users/mac/Desktop/project_4_1/project_4.srcs/sources_1/new/project_4.v:63]
+WARNING: [Synth 8-3295] tying undriven pin Driver_HDMI0:RGB_In[3] to constant 0 [C:/Users/mac/Desktop/project_4_1/project_4.srcs/sources_1/new/project_4.v:63]
+WARNING: [Synth 8-3295] tying undriven pin Driver_HDMI0:RGB_In[2] to constant 0 [C:/Users/mac/Desktop/project_4_1/project_4.srcs/sources_1/new/project_4.v:63]
+WARNING: [Synth 8-3295] tying undriven pin Driver_HDMI0:RGB_In[1] to constant 0 [C:/Users/mac/Desktop/project_4_1/project_4.srcs/sources_1/new/project_4.v:63]
+WARNING: [Synth 8-3295] tying undriven pin Driver_HDMI0:RGB_In[0] to constant 0 [C:/Users/mac/Desktop/project_4_1/project_4.srcs/sources_1/new/project_4.v:63]
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 535.418 ; gain = 160.352
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 535.418 ; gain = 160.352
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7s15ftgb196-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/mac/Desktop/project_4_1/project_4.srcs/sources_1/ip/Picture_R_Rom_1/Picture_R_Rom/Picture_R_Rom_in_context.xdc] for cell 'Video_Generator0/R_ROM'
+Finished Parsing XDC File [c:/Users/mac/Desktop/project_4_1/project_4.srcs/sources_1/ip/Picture_R_Rom_1/Picture_R_Rom/Picture_R_Rom_in_context.xdc] for cell 'Video_Generator0/R_ROM'
+Parsing XDC File [c:/Users/mac/Desktop/project_4_1/project_4.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc] for cell 'rgb2dvi'
+Finished Parsing XDC File [c:/Users/mac/Desktop/project_4_1/project_4.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc] for cell 'rgb2dvi'
+Parsing XDC File [c:/Users/mac/Desktop/project_4_1/project_4.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'clk_10'
+Finished Parsing XDC File [c:/Users/mac/Desktop/project_4_1/project_4.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'clk_10'
+Parsing XDC File [c:/Users/mac/Desktop/project_4_1/project_4.srcs/sources_1/ip/RGB_To_Gray_0/RGB_To_Gray_0/RGB_To_Gray_0_in_context.xdc] for cell 'Video_Generator0/RGB2Gray'
+Finished Parsing XDC File [c:/Users/mac/Desktop/project_4_1/project_4.srcs/sources_1/ip/RGB_To_Gray_0/RGB_To_Gray_0/RGB_To_Gray_0_in_context.xdc] for cell 'Video_Generator0/RGB2Gray'
+Parsing XDC File [c:/Users/mac/Desktop/project_4_1/project_4.srcs/sources_1/ip/Picture_G_Rom_1/Picture_G_Rom/Picture_G_Rom_in_context.xdc] for cell 'Video_Generator0/G_ROM'
+Finished Parsing XDC File [c:/Users/mac/Desktop/project_4_1/project_4.srcs/sources_1/ip/Picture_G_Rom_1/Picture_G_Rom/Picture_G_Rom_in_context.xdc] for cell 'Video_Generator0/G_ROM'
+Parsing XDC File [c:/Users/mac/Desktop/project_4_1/project_4.srcs/sources_1/ip/Picture_B_Rom/Picture_B_Rom/Picture_B_Rom_in_context.xdc] for cell 'Video_Generator0/B_ROM'
+Finished Parsing XDC File [c:/Users/mac/Desktop/project_4_1/project_4.srcs/sources_1/ip/Picture_B_Rom/Picture_B_Rom/Picture_B_Rom_in_context.xdc] for cell 'Video_Generator0/B_ROM'
+Parsing XDC File [C:/Users/mac/Desktop/project_4_1/project_4.srcs/constrs_1/new/system.xdc]
+Finished Parsing XDC File [C:/Users/mac/Desktop/project_4_1/project_4.srcs/constrs_1/new/system.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/mac/Desktop/project_4_1/project_4.srcs/constrs_1/new/system.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/project_4_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/project_4_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/mac/Desktop/project_4_1/project_4.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/mac/Desktop/project_4_1/project_4.runs/synth_1/dont_touch.xdc]
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 839.707 ; gain = 0.000
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 839.707 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 839.707 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 839.707 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'Video_Generator0/B_ROM' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'Video_Generator0/G_ROM' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'Video_Generator0/R_ROM' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 839.707 ; gain = 464.641
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7s15ftgb196-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 839.707 ; gain = 464.641
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for TMDS_Tx_Clk_N. (constraint file  c:/Users/mac/Desktop/project_4_1/project_4.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 1).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDS_Tx_Clk_N. (constraint file  c:/Users/mac/Desktop/project_4_1/project_4.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 2).
+Applied set_property IO_BUFFER_TYPE = NONE for TMDS_Tx_Clk_P. (constraint file  c:/Users/mac/Desktop/project_4_1/project_4.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDS_Tx_Clk_P. (constraint file  c:/Users/mac/Desktop/project_4_1/project_4.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for TMDS_Tx_Data_N[0]. (constraint file  c:/Users/mac/Desktop/project_4_1/project_4.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 5).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDS_Tx_Data_N[0]. (constraint file  c:/Users/mac/Desktop/project_4_1/project_4.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 6).
+Applied set_property IO_BUFFER_TYPE = NONE for TMDS_Tx_Data_N[1]. (constraint file  c:/Users/mac/Desktop/project_4_1/project_4.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 7).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDS_Tx_Data_N[1]. (constraint file  c:/Users/mac/Desktop/project_4_1/project_4.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 8).
+Applied set_property IO_BUFFER_TYPE = NONE for TMDS_Tx_Data_N[2]. (constraint file  c:/Users/mac/Desktop/project_4_1/project_4.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 9).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDS_Tx_Data_N[2]. (constraint file  c:/Users/mac/Desktop/project_4_1/project_4.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 10).
+Applied set_property IO_BUFFER_TYPE = NONE for TMDS_Tx_Data_P[0]. (constraint file  c:/Users/mac/Desktop/project_4_1/project_4.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 11).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDS_Tx_Data_P[0]. (constraint file  c:/Users/mac/Desktop/project_4_1/project_4.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 12).
+Applied set_property IO_BUFFER_TYPE = NONE for TMDS_Tx_Data_P[1]. (constraint file  c:/Users/mac/Desktop/project_4_1/project_4.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 13).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDS_Tx_Data_P[1]. (constraint file  c:/Users/mac/Desktop/project_4_1/project_4.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 14).
+Applied set_property IO_BUFFER_TYPE = NONE for TMDS_Tx_Data_P[2]. (constraint file  c:/Users/mac/Desktop/project_4_1/project_4.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 15).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDS_Tx_Data_P[2]. (constraint file  c:/Users/mac/Desktop/project_4_1/project_4.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 16).
+Applied set_property DONT_TOUCH = true for Video_Generator0/R_ROM. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for rgb2dvi. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for clk_10. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Video_Generator0/RGB2Gray. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Video_Generator0/G_ROM. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Video_Generator0/B_ROM. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 839.707 ; gain = 464.641
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-327] inferring latch for variable 'Address_reg' [C:/Users/mac/Desktop/project_4_1/project_4.srcs/sources_1/new/Video_Generator.v:45]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:21 . Memory (MB): peak = 839.707 ; gain = 464.641
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'number_judge_1/counter1' (counterhang) to 'number_judge_1/counter2'
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 5     
+	   3 Input     32 Bit       Adders := 1     
+	   5 Input     11 Bit       Adders := 1     
+	   3 Input     10 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
+	   3 Input      7 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 4     
++---Registers : 
+	               24 Bit    Registers := 1     
+	               12 Bit    Registers := 2     
+	               11 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 20    
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 3     
+	   4 Input     16 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 2     
+	  10 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Driver_HDMI 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 5     
+	   3 Input     32 Bit       Adders := 1     
+	   5 Input     11 Bit       Adders := 1     
+	   3 Input     10 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
+	   3 Input      7 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 2     
++---Registers : 
+	               11 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 4     
+Module Video_Generator 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 2     
+Module Two_Judge 
+Detailed RTL Component Info : 
++---Registers : 
+	               24 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   4 Input     16 Bit        Muxes := 1     
+Module counterhang 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               12 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
+Module counterlie 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               12 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
+Module number_judge 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 6     
++---Muxes : 
+	  10 Input      4 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 20 (col length:20)
+BRAMs: 20 (col length: RAMB18 20 RAMB36 10)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+DSP Report: Generating DSP Address0, operation Mode is: C+A*(B:0x64).
+DSP Report: operator Address0 is absorbed into DSP Address0.
+DSP Report: operator Address1 is absorbed into DSP Address0.
+WARNING: [Synth 8-3331] design Two_Judge has unconnected port data8_out[7]
+WARNING: [Synth 8-3331] design Two_Judge has unconnected port data8_out[6]
+WARNING: [Synth 8-3331] design Two_Judge has unconnected port data8_out[5]
+WARNING: [Synth 8-3331] design Two_Judge has unconnected port data8_out[4]
+WARNING: [Synth 8-3331] design Two_Judge has unconnected port data8_out[3]
+WARNING: [Synth 8-3331] design Two_Judge has unconnected port data8_out[2]
+WARNING: [Synth 8-3331] design Two_Judge has unconnected port data8_out[1]
+WARNING: [Synth 8-3331] design Two_Judge has unconnected port data8_out[0]
+WARNING: [Synth 8-3331] design Video_Generator has unconnected port RGB_VDE
+WARNING: [Synth 8-3331] design project_4 has unconnected port Key[1]
+WARNING: [Synth 8-3331] design project_4 has unconnected port Key[0]
+INFO: [Synth 8-3886] merging instance 'Two_Judge_1/data_out1_1_reg' (FDR) to 'Two_Judge_1/data_out24_1_reg[0]'
+INFO: [Synth 8-3886] merging instance 'Two_Judge_1/data_out24_reg[0]' (FDR) to 'Two_Judge_1/data_out24_reg[1]'
+INFO: [Synth 8-3886] merging instance 'Two_Judge_1/data_out24_reg[1]' (FDR) to 'Two_Judge_1/data_out24_reg[2]'
+INFO: [Synth 8-3886] merging instance 'Two_Judge_1/data_out24_reg[2]' (FDR) to 'Two_Judge_1/data_out24_reg[3]'
+INFO: [Synth 8-3886] merging instance 'Two_Judge_1/data_out24_reg[3]' (FDR) to 'Two_Judge_1/data_out24_reg[4]'
+INFO: [Synth 8-3886] merging instance 'Two_Judge_1/data_out24_reg[4]' (FDR) to 'Two_Judge_1/data_out24_reg[5]'
+INFO: [Synth 8-3886] merging instance 'Two_Judge_1/data_out24_reg[5]' (FDR) to 'Two_Judge_1/data_out24_reg[6]'
+INFO: [Synth 8-3886] merging instance 'Two_Judge_1/data_out24_reg[6]' (FDR) to 'Two_Judge_1/data_out24_reg[7]'
+INFO: [Synth 8-3886] merging instance 'Two_Judge_1/data_out24_reg[8]' (FDR) to 'Two_Judge_1/data_out24_reg[9]'
+INFO: [Synth 8-3886] merging instance 'Two_Judge_1/data_out24_reg[9]' (FDR) to 'Two_Judge_1/data_out24_reg[10]'
+INFO: [Synth 8-3886] merging instance 'Two_Judge_1/data_out24_reg[10]' (FDR) to 'Two_Judge_1/data_out24_reg[11]'
+INFO: [Synth 8-3886] merging instance 'Two_Judge_1/data_out24_reg[11]' (FDR) to 'Two_Judge_1/data_out24_reg[12]'
+INFO: [Synth 8-3886] merging instance 'Two_Judge_1/data_out24_reg[12]' (FDR) to 'Two_Judge_1/data_out24_reg[13]'
+INFO: [Synth 8-3886] merging instance 'Two_Judge_1/data_out24_reg[13]' (FDR) to 'Two_Judge_1/data_out24_reg[14]'
+INFO: [Synth 8-3886] merging instance 'Two_Judge_1/data_out24_reg[14]' (FDR) to 'Two_Judge_1/data_out24_reg[15]'
+INFO: [Synth 8-3886] merging instance 'Two_Judge_1/data_out24_reg[16]' (FDR) to 'Two_Judge_1/data_out24_reg[17]'
+INFO: [Synth 8-3886] merging instance 'Two_Judge_1/data_out24_reg[17]' (FDR) to 'Two_Judge_1/data_out24_reg[18]'
+INFO: [Synth 8-3886] merging instance 'Two_Judge_1/data_out24_reg[18]' (FDR) to 'Two_Judge_1/data_out24_reg[19]'
+INFO: [Synth 8-3886] merging instance 'Two_Judge_1/data_out24_reg[19]' (FDR) to 'Two_Judge_1/data_out24_reg[20]'
+INFO: [Synth 8-3886] merging instance 'Two_Judge_1/data_out24_reg[20]' (FDR) to 'Two_Judge_1/data_out24_reg[21]'
+INFO: [Synth 8-3886] merging instance 'Two_Judge_1/data_out24_reg[21]' (FDR) to 'Two_Judge_1/data_out24_reg[22]'
+INFO: [Synth 8-3886] merging instance 'Two_Judge_1/data_out24_reg[22]' (FDR) to 'Two_Judge_1/data_out24_reg[23]'
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 839.707 ; gain = 464.641
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping  Report (see note below)
++----------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name     | DSP Mapping  | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++----------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Video_Generator | C+A*(B:0x64) | 12     | 7      | 12     | -      | 14     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
++----------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/mac/Desktop/project_4_1/project_4.srcs/sources_1/new/Driver_HDMI.v:86]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/mac/Desktop/project_4_1/project_4.srcs/sources_1/new/Driver_HDMI.v:87]
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'clk_10/clk_out1' to pin 'clk_10/bbstub_clk_out1/O'
+INFO: [Synth 8-5819] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:37 ; elapsed = 00:00:42 . Memory (MB): peak = 872.520 ; gain = 497.453
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:38 ; elapsed = 00:00:42 . Memory (MB): peak = 898.094 ; gain = 523.027
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:38 ; elapsed = 00:00:43 . Memory (MB): peak = 898.094 ; gain = 523.027
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-4442] BlackBox module clk_10 has unconnected pin reset
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:40 ; elapsed = 00:00:44 . Memory (MB): peak = 898.094 ; gain = 523.027
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:40 ; elapsed = 00:00:44 . Memory (MB): peak = 898.094 ; gain = 523.027
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:40 ; elapsed = 00:00:45 . Memory (MB): peak = 898.094 ; gain = 523.027
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:40 ; elapsed = 00:00:45 . Memory (MB): peak = 898.094 ; gain = 523.027
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:40 ; elapsed = 00:00:45 . Memory (MB): peak = 898.094 ; gain = 523.027
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:40 ; elapsed = 00:00:45 . Memory (MB): peak = 898.094 ; gain = 523.027
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+--------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name                       | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+--------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|project_4   | number_judge_1/vid_vde_out_reg | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
++------------+--------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |clk_wiz_0     |         1|
+|2     |rgb2dvi_0     |         1|
+|3     |Picture_R_Rom |         1|
+|4     |Picture_G_Rom |         1|
+|5     |Picture_B_Rom |         1|
+|6     |RGB_To_Gray_0 |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+--------------+------+
+|      |Cell          |Count |
++------+--------------+------+
+|1     |Picture_B_Rom |     1|
+|2     |Picture_G_Rom |     1|
+|3     |Picture_R_Rom |     1|
+|4     |RGB_To_Gray_0 |     1|
+|5     |clk_wiz_0     |     1|
+|6     |rgb2dvi_0     |     1|
+|7     |CARRY4        |    24|
+|8     |DSP48E1_1     |     1|
+|9     |LUT1          |    16|
+|10    |LUT2          |    54|
+|11    |LUT3          |    38|
+|12    |LUT4          |    12|
+|13    |LUT5          |     7|
+|14    |LUT6          |    16|
+|15    |SRL16E        |     1|
+|16    |FDRE          |    73|
+|17    |LD            |    14|
+|18    |IBUF          |     1|
++------+--------------+------+
+
+Report Instance Areas: 
++------+-------------------+----------------+------+
+|      |Instance           |Module          |Cells |
++------+-------------------+----------------+------+
+|1     |top                |                |   299|
+|2     |  Driver_HDMI0     |Driver_HDMI     |   199|
+|3     |  Two_Judge_1      |Two_Judge       |     7|
+|4     |  Video_Generator0 |Video_Generator |    47|
+|5     |  number_judge_1   |number_judge    |    35|
+|6     |    counter1       |counterhang     |    15|
+|7     |    counter3       |counterlie      |    14|
++------+-------------------+----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:40 ; elapsed = 00:00:45 . Memory (MB): peak = 898.094 ; gain = 523.027
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 1 critical warnings and 12 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:27 ; elapsed = 00:00:36 . Memory (MB): peak = 898.094 ; gain = 218.738
+Synthesis Optimization Complete : Time (s): cpu = 00:00:40 ; elapsed = 00:00:45 . Memory (MB): peak = 898.094 ; gain = 523.027
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 39 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 898.094 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 14 instances were transformed.
+  LD => LDCE: 14 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+70 Infos, 59 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:43 ; elapsed = 00:00:48 . Memory (MB): peak = 898.094 ; gain = 535.766
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 898.094 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/mac/Desktop/project_4_1/project_4.runs/synth_1/project_4.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file project_4_utilization_synth.rpt -pb project_4_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Aug  2 12:02:48 2020...
